@@ -1,0 +1,73 @@
+{% trans_default_domain 'website' %}
+{% extends 'blog/blog_layout.html.twig' %}
+
+{% block title %}{{ 'blog.blog_pharmacist_title' | trans }}{% endblock %}
+{% block current_breadcrumb  %}
+     <li>{{ 'blog.blog_pharmacist_title' | trans }}</li>
+{% endblock %}
+{% block blog_content %}
+    <div class="container margin_60">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="bloglist singlepost">
+						<p><img alt="" class="img-fluid" src="{{ asset('img/pharmacy-and-phone.jpg') }}"></p>
+						<h1 class="my-4">{{ 'blog.blog_pharmacist_title' | trans }}</h1>
+						<!-- /post meta -->
+						<div class="post-content">
+							<div class="dropcaps mb-3">
+								<p>Pendant des années, informer les citoyens des pharmacies de garde s’est fait de la même manière : affiches papier collées sur les portes des pharmacies, feuilles accrochées aux panneaux ou aux feux rouges…<br> Des informations parfois illisibles, perdues, ou dépassées.</p>
+							</div>
+							<b class="mb-3">FinPharma vient remplacer cette méthode traditionnelle par une solution simple, moderne et efficace.</b>
+                            <p><b>Fini les papiers, place au digital </b><br> Avec FinPharma, vous n’avez plus besoin de :</p>
+                            <ul class="mb-3">
+                                <li>Coller des feuilles d’indication sur votre portes</li>
+                                <li>Mettre à jour chaque semaine des listes papier</li>
+                                <li>Gérer des informations qui deviennent rapidement obsolètes</li>
+                            </ul>
+                            <b>Il suffit d’ajouter votre pharmacie sur l’application FinPharma.</b>
+                            <h2 class="mt-4">Une présence digitale qui travaille pour vous</h2>
+                            <p>En rejoignant FinPharma, votre pharmacie bénéficie automatiquement de :</p>
+                             <ul class="mb-3">
+                                <li>Une présence digitale sur une application disponible sur Google Play et App Store</li>
+                                <li>Une visibilité permanente auprès des patients</li>
+                                <li>Une localisation précise via GPS pour être trouvée facilement, même par des personnes qui ne connaissent pas le quartier</li>
+                            </ul>
+                            <p>Les patients vous trouvent en quelques secondes, sans appels ni déplacements inutiles.</p>
+                            <h2  class="mt-4">Gestion simple et mise à jour en temps réel</h2>
+                            <p>FinPharma vous permet de :</p>
+                            <ul class="mb-3">
+                                <li>Ajouter ou modifier vos horaires de garde en toute autonomie</li>
+                                <li>Voir les changements appliqués instantanément dans l’application</li>
+                                <li>Éviter toute confusion liée aux anciennes informations affichées</li>
+                            </ul>
+                            <p>Une seule modification suffit, tout est mis à jour automatiquement.</p>
+                            <h2  class="mt-4">Un QR code intelligent pour l’orientation des patients</h2>
+                            <p>FinPharma vous offre aussi la possibilité de :</p>
+                            <ul class="mb-3">
+                                <li>Télécharger une version papier de votre fiche pharmacie</li>
+                                <li>Inclure un QR code menant directement à votre emplacement GPS</li>
+                                <li>Imprimer ce document et l’afficher dans des lieux publics (porte de la pharmacie, quartiers, commerces, etc.)</li>
+                            </ul>
+                            <b>Un simple scan, et le patient est guidé directement jusqu’à vous.</b>
+                            <h2 class="mt-4">Une meilleure expérience pour les patients</h2>
+                            <p>Grâce à FinPharma, les patients peuvent :</p>
+                            <ul class="mb-3">
+                                <li>Trouver rapidement la pharmacie de garde la plus proche</li>
+                                <li>Accéder à un itinéraire clair et fiable</li>
+                                <li>Gagner du temps, surtout en cas d’urgence</li>
+                            </ul>
+                            <p>Moins de stress pour eux, plus de sérénité pour vous.</p>
+                            <h2 class="mt-4">FinPharma : un partenaire, pas juste une application</h2>
+                            <p>FinPharma a été conçue pour répondre aux réalités du terrain marocain, avec un objectif clair :
+                            <b>simplifier la garde, améliorer l’orientation des patients et valoriser le rôle du pharmacien.</b></p>
+                            <h2 class="mt-4">Rejoignez FinPharma dès aujourd’hui</h2>
+                            <p>Un seul outil.<br> Moins de papier.<br> Plus de visibilité.<br> Plus d’efficacité. </p>
+                            <b>FinPharma, la solution digitale au service des pharmaciens et des citoyens.</b>
+						</div>
+						<!-- /post -->
+					</div>
+					<!-- /single-post -->
+                </div>
+            </div>
+    </div>
+{% endblock %}

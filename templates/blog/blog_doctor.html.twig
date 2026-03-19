@@ -1,0 +1,82 @@
+{% trans_default_domain 'website' %}
+{% extends 'blog/blog_layout.html.twig' %}
+
+{% block title %}{{ 'blog.blog_doctor_title' | trans }}{% endblock %}
+{% block current_breadcrumb  %}
+     <li>{{ 'blog.blog_doctor_title' | trans }}</li>
+{% endblock %}
+{% block blog_content %}
+    <div class="container margin_60">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="bloglist singlepost">
+						<p><img alt="" class="img-fluid" src="{{ asset('img/doctor-rating.jpg') }}"></p>
+						<h1 class="my-4">{{ 'blog.blog_doctor_title' | trans }}</h1>
+						<!-- /post meta -->
+						<div class="post-content">
+							<div class="dropcaps mb-3">
+								<p>Aujourd’hui, choisir un médecin ou une clinique n’est pas une décision anodine.<br>
+                                Au Maroc, ce choix repose avant tout sur la confiance, la recommandation d’un proche, ou l’expérience d’un patient qui a déjà consulté.</p>
+							</div>
+                            <b>Le meilleur annuaire santé basé sur la confiance</b>
+                            <p>Contrairement à d’autres pays, les avis en ligne (notamment Google) ne reflètent pas toujours la réalité médicale. C’est pourquoi FinPharma a été pensé autrement.</p>
+							<h2>FinPharma : plus qu’un annuaire, un véritable Medical Advisor</h2>
+                            <p>FinPharma n’est pas un simple site de listing. <br> C’est une plateforme conçue pour :</p>
+                            <ul class="mb-3">
+                                <li>Orienter les patients vers le bon médecin ou la bonne clinique</li>
+                                <li>Simplifier la recherche par spécialité, localisation et besoins réels</li>
+                                <li>Mettre en relation patients et professionnels de santé dans un cadre clair et fiable</li>
+                            </ul>
+                            <h2>Être visible là où les patients cherchent vraiment</h2>
+                            <p>En rejoignant FinPharma, votre cabinet ou clinique bénéficie :</p>
+                            <ul class="mb-3">
+                                <li>D’une présence digitale professionnelle sur une plateforme dédiée à la santé</li>
+                                <li>D’un profil clair et structuré (spécialité, services, horaires, localisation)</li>
+                                <li>D’une visibilité auprès de patients qui cherchent activement un médecin, pas seulement des avis</li>
+                            </ul>
+                            <p>Vous êtes trouvé <b>au bon moment, par les bonnes personnes.</b></p>
+                            <h2 class="mt-4">La confiance avant les avis</h2>
+                            <p>FinPharma s’appuie sur une réalité marocaine :</p>
+                            <p>Les patients font confiance aux <b>recommandations</b>, pas aux simples notes.</p>
+                            <p>La plateforme met donc l’accent sur :</p>
+                             <ul class="mb-3">
+                                <li>L’expérience réelle des patients</li>
+                                <li>La clarté des informations médicales</li>
+                                <li>La transparence et le sérieux des professionnels référencés</li>
+                            </ul>
+                            <p>Objectif : créer un climat de confiance durable entre médecins et patients.</p>
+                            <p>Pour les patients, FinPharma permet :</p>
+                            <ul class="mb-3">
+                                <li>De rechercher un médecin ou une clinique par spécialité</li>
+                                <li>De trouver rapidement l’adresse exacte et l’itinéraire via GPS</li>
+                                <li>De gagner du temps et d’éviter les déplacements inutiles</li>
+                            </ul>
+                            <p>Un patient bien orienté est un patient rassuré.</p>
+                            <h2  class="mt-4">Un outil pensé pour évoluer avec votre activité</h2>
+                            <p>FinPharma est conçu pour aller plus loin que la simple visibilité :</p>
+                            <ul class="mb-3">
+                                <li>Gestion des informations du cabinet ou de la clinique.</li>
+                                <li>Mise à jour des horaires et services.</li>
+                                <li>Possibilité d’évoluer vers des fonctionnalités d’administration (organisation, communication, gestion)</li>
+                            </ul>
+                            <h2 class="mt-4">Valorisez votre image professionnelle</h2>
+                            <p>Être présent sur FinPharma, c’est :</p>
+                            <ul class="mb-3">
+                                <li>Renforcer votre crédibilité en ligne</li>
+                                <li>Montrer votre engagement pour un service médical accessible et moderne</li>
+                                <li>Faire partie d’un réseau de professionnels de santé sélectionnés</li>
+                            </ul>
+                            <h2 class="mt-4">FinPharma, un partenaire de confiance</h2>
+                            <p>Notre ambition est claire :
+                            <b>simplifier l’accès aux soins, guider les patients et accompagner les professionnels de santé.</b></p>
+                            <p>Cabinets médicaux, cliniques, spécialistes…<br>FinPharma vous aide à être visible, accessible et reconnu.</p>
+                            <h2 class="mt-4">Rejoignez FinPharma dès aujourd’hui</h2>
+                            <p>Parce que la santé commence par une bonne orientation.<br> <b>FinPharma – Le guide santé basé sur la confiance.</b></p>
+						</div>
+						<!-- /post -->
+					</div>
+					<!-- /single-post -->
+                </div>
+            </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,56 @@
+# This file is the entry point to configure your own services.
+# Files in the packages/ subdirectory configure your dependencies.
+
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices.html#use-parameters-for-application-configuration
+parameters:
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/'
+
+    # add more service definitions when explicit configuration is needed
+    # please note that last definitions always *replace* previous ones
+    Smalot\PdfParser\Parser: ~
+
+    hwi_oauth.user.provider.entity:
+        class: HWI\Bundle\OAuthBundle\Security\Core\User\EntityUserProvider
+        arguments:
+            $class: App\Entity\User
+            $properties:
+                'facebook': 'facebook'
+                'google': 'google'
+                'linkedin': 'linkedin'
+
+    App\Security\OAuthConnector:
+        arguments:
+            $properties:
+                'google': 'google'
+                'linkedin': 'linkedin'
+
+    App\EventSubscriber\PublicApiSubscriber:
+        arguments:
+            $publicApiKey: '%env(PUBLIC_API_KEY)%'
+
+    App\Security\MobileAppAuthenticator:
+        arguments:
+            $appSecret: '%env(MOBILE_APP_SECRET)%'
+            $allowedBundleIds:
+                - 'ma.finpharma.com'  # iOS
+                - 'ma.finpharma.com'  # Android
+
+    App\Security\InternalRequestAuthenticator:
+        arguments:
+            $internalApiKey: '%env(INTERNAL_API_KEY)%'
+            $allowedHost: '%env(APP_DOMAIN)%'
+
+    App\Security\PublicApiAuthenticator:
+        arguments:
+            $internalAuthenticator: '@App\Security\InternalRequestAuthenticator'

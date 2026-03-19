@@ -1,0 +1,181 @@
+/*============================================================================================*/
+/* Your custom styles below */
+/*============================================================================================*/
+ul#top_access li a.add-establishement {
+    color: #FFF;
+    background: #025FAC;
+    background: -webkit-linear-gradient(90deg,rgba(2, 95, 172, 1) 0%, rgba(4, 175, 175, 1) 50%, rgba(4, 189, 175, 1) 100%);
+    background: -moz-linear-gradient(90deg,rgba(2, 95, 172, 1) 0%, rgba(4, 175, 175, 1) 50%, rgba(4, 189, 175, 1) 100%);
+    background: linear-gradient(90deg,rgba(2, 95, 172, 1) 0%, rgba(4, 175, 175, 1) 50%, rgba(4, 189, 175, 1) 100%);
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    transition: background-image 0.9s ease;
+}
+
+ul#top_access li a.add-establishement:hover {
+  background: linear-gradient(90deg, rgba(4, 189, 175, 1) 0%, rgba(4, 175, 175, 1) 50%, rgba(2, 95, 172, 1) 100%);
+}
+
+.header_sticky .row {
+    align-items: center;
+}
+
+.hero_home img {
+    margin-bottom: 2rem;
+}
+
+
+
+
+[name=add_establishement] #radio-tags label {
+    padding: 1rem;
+    background-color: #04BDAF;
+    color: #FFF;
+    border-radius: 0px;
+}
+
+.iti {
+    width: 100%;
+}
+
+label.required:not(.form-check-label)::after {
+    content: '*';
+    color: red;
+}
+
+.form-check-input:checked {
+    background-color: #04BDAF;
+    border-color: #04BDAF;
+}
+
+a.btn_1, button.btn_1 {
+    color: #FFF;
+    background: #025FAC;
+    padding: 1rem 2rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+[name=add_establishement] #radio-tags ul li input[type="radio"]:checked + label {
+  background-color: #025FAC;
+}
+
+[name=add_establishement] #radio-tags {
+    width: auto;
+}
+
+.select2-container .select2-selection--single, .select2-container .select2-selection--multiple {
+    min-height: 40px;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+    line-height: 40px;
+}
+
+.card-title {
+    background: #025FAC;
+    padding: 1rem;
+    color: #FFF;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.doctor-calendar > #section_1 , .doctor-calendar > #section_1 > div ,  .doctor-calendar > #section_1 > div > div{
+    height: 100%;
+}
+
+legend.title {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.btn_2 {
+    background-color: #04BDAF!important;
+}
+
+/* Profile dropdown */
+.profile-menu {
+  position: relative;
+}
+
+/* Profile link */
+.profile-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  color: #333;
+  cursor: pointer;
+}
+
+/* Dropdown */
+.profile-dropdown {
+  border-top: 2px solid #025FAC;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  min-width: 140px;
+  background: #fff;
+  box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.175);
+  list-style: none;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  transition: all 0.25s ease;
+  z-index: 1000;
+}
+
+/* Show on hover */
+.profile-menu:hover .profile-dropdown {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+/* Dropdown items */
+.profile-dropdown li {
+  padding: 0;
+}
+
+.profile-dropdown li a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  padding: 15px;
+}
+
+
+ul#top_access li a {
+    border-bottom: 1px solid #ededed;
+    color: #555;
+    font-size: 0.8rem;
+}
+
+ul#top_access .profile-dropdown li {
+    margin-left: 0px;
+    display: block;
+}
+
+ul#top_access {
+    display: flex;
+    align-items: center;
+}
+
+.singlepost {
+    padding-bottom: 30px!important;
+}
+
+.singlepost ul  {
+    list-style: unset;
+    margin-left: 1rem;
+}
+
+.singlepost p {
+    margin-bottom: 0px;
+}
+
+.singlepost h2 {
+    font-size: 1.8rem;
+}

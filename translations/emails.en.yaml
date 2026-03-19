@@ -1,0 +1,7 @@
+new_pharmacy:
+  subject: Bienvenue sur FinPharma
+  welcome: <p>Hi there</p><p>Sometimes you just want to send a simple HTML email with a simple design and clear call to action. This is it.</p>
+  create_your_password: Creer mon mot de passe
+  explanation: <p>After creating your password you can access your pharmacy space to handle it.</p>
+  footer: <tr><td class="content-block"><span class="apple-link">FINPHARMA, Marrakech Amizmiz</span></td></tr><tr><td class="content-block powered-by">Powered by <a href="#">LATINOUR</a></td></tr>
+  placeholder: This is an email from finpharma.

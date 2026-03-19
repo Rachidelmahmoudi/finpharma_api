@@ -1,0 +1,66 @@
+global_search:
+    all: all
+    pharmacies: pharmacies
+    medecins: medecins
+    laboratories: laboratories
+    search_placeholder: Pharmacie, Medicament, Medecin ...
+registration:
+    firstname: first names
+    lastname: last name
+    email: Email address
+    phone: phone
+    password: Password
+    confirm_password: Confirm your password
+    terms_and_conditions: > 
+        I accept <a href="#">terms and conditions and general policy</a>
+
+phone:
+    label: Phone number
+    placeholder: 05 22 33 44 55
+
+add_establishement:
+    types:
+        doc: Cabinet medical
+        pharmacy: Pharmacie
+        laboratory: Laboratoire
+    doc:
+        name: Nom de cabinet
+        address: Address
+        phone: phone
+        city: City
+        description: description
+        specility:  Specility
+        choose_your_speciality: Choose your speciality
+        phone_help: Téléphone Portable ou fixe pour contactez le cabinet
+        speciality_help: Le domaine dnt vous travaillez
+        description_help: Tout ce que vous pouvez dire plus de vous
+    labo:
+        select_the_analyes: Choisissez les analyses que vous faites
+        name: Nom de laboratoire
+        address: Addresse
+        phone: Numéro de téléphone
+        description: Description
+        phone_help: Téléphone Portable ou fixe pour contactez le laboratoire
+        analyses_help: Pour permettre aux patients de savoir ce que vous offrez
+        description_help: Tout ce que vous pouvez dire de vous
+    other:
+        type: Quel est le type de votre activite ? 
+        type_placeholder: Parapharmacie, Clinique, ....
+        type_help: Speccifiez le type de votre activite
+        name: Nom de votre etablissement
+        name_help: Pour que les gents puisent vous trouvez simplement
+        address: Addresse
+        address_help: Mettez l'addresse exacte de votre localisation
+        address_placeholer: Ex :Avenue al anwar, Imm Ibn sina Etage 2 № 11
+        phone: Numéro de téléphone
+        phone_help: Téléphone Portable ou fixe ou les clients peuvent vous contacter
+        description: Description de votre activite
+        description_help: Montrez en details ce que vous presenntez comme service
+
+
+    choose_your_type: Choisissez le type de votre activite
+    activity_informations: Informations de votre activite
+    others: Autre
+    city:
+        choose_your_city: Chooose the city
+    submit: Envoyer

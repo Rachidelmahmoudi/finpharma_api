@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'website' %}
+{% block body %}
+<div class="bg_color_2">
+	<div class="container margin_60_35">
+		<div id="register">
+			<h1>{{ 'registration.title' | trans }}</h1>
+			<div class="row justify-content-center">
+				<div class="col-md-5">
+					{{ form_start(form, {'action': path('hwi_oauth_connect_registration', {'key': key}), 'attr': {'class': 'hwi_oauth_registration_register'}}) }}
+						<div class="box_form">
+							 {{ form_widget(form) }}
+							<div class="row">
+								<div class="col-md-12 d-flex justify-content-between">
+									<button type="submit" class="btn_1">{{ 'connect.registration.submit'|trans({}, 'HWIOAuthBundle') }}</button>
+                    				<a href="{{ path('hwi_oauth_connect') }}" class="btn_1 btn_2">{{ 'connect.registration.cancel' | trans({}, 'HWIOAuthBundle') }}</a>
+								</div>
+							</div>
+						</div>
+					{{ form_end(form) }}
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /register -->
+	</div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        function triggerBusiness(type) {
+            document.forms.registration_form.submit();
+        }
+        $(document).ready(function() {
+            window.intlTelInput(document.querySelector("#registration_form_phone_phone"), {
+                initialCountry: "ma",
+  				separateDialCode: true,
+				hiddenInput: () => ({ phone: "registration_form[phone][full_phone]", country: "registration_form[phone][country_code]" }),
+                loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.14.1/build/js/utils.js"),
+            }); 
+        });
+    </script>
+{% endblock %}

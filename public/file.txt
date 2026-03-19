@@ -1,0 +1,353 @@
+1- Examens sanguins
+Chimie courante
+Analyse B Prix en DH
+Acide urique 30 40,2
+Albuminémie (Méthode immunologique) 60 80,4
+Ammoniémie 100 134
+Bilirubine (Totale Directe et Indirecte) 70 93,8
+Calcium 30 40,2
+Chlore 30 40,2
+Chlore Cholestérol total 30 40,2
+Cholestérol estérifié 30 40,2
+Cholestérol H D L 50 67
+Cholestérol L D L 50 67
+Cholestérol HDL+ L D L 80 107,2
+Créatinine 30 40,2
+Electrophorèse de l'hémoglobine 100 134
+Electrophorèse des lipides 100 134
+Electrophorèse des protides 100 134
+Fer sérique 60 80,4
+Fer sérique+C T F 100 134
+Fructosamine 80 107,2
+Glycémie 30 40,2
+Hémoglobine glycosylée 100 134
+Ionogramme complet( Na, K, Cl, Prot, RA, Ca) 160 214,4
+Lipides 30 40,2
+Lipoprotéine A 150 201
+Lipoprotéine B 150 201
+Lipoprotéine A+B 250 335
+Lithium 50 67
+Magnésium plasmatique 60 80,4
+Magnésium erythrocytaire 80 107,2
+Oxalates 180 241,2
+Phosphore minéral 40 53,6
+Protéines 30 40,2
+Potassium 30 40,2
+Réserve alcaline 40 53,6
+Sodium 30 40,2
+Triglycérides 60 80,4
+Urée 30 40,2
+Enzymologie
+Analyse B Prix en DH
+Aldolase 100 134
+Amylase 100 134
+CPK 100 134
+CPK(MB) 200 268
+G6PDH 100 134
+Gamma glutamyl transférase ( GGT) 50 67
+LDH 50 67
+Phosphatases alcalines 50 67
+Phosphatases acides 50 67
+Phosphatases prostatiques 50 67
+Transaminases O (TGO) 50 67
+Transaminases P (TGP) 50 67
+Lipase 100 134
+Troponine 250 335
+Hormonologie
+Analyse B Prix en DH
+BHCG quantitatif 250 335
+BHCG qualitatif 100 134
+17BOestradiol 250 335
+Cortisol 250 335
+Ferritine 250 335
+Insuline 300 402
+LH 250 335
+Progestérone 250 335
+Prolactine 250 335
+T3 200 268
+T4 200 268
+T4 libre 200 268
+Testostérone 300 402
+TSH 250 335
+TSH us 250 335
+T3L 300 402
+2- Examens urinaires
+Chimie courante
+Analyse B Prix en DH
+Acétone ( recherche ) 10 13,4
+Acide urique 30 40,2
+Calcium 30 40,2
+Chlore 30 40,2
+Créatinine 30 40,2
+Electrophorèse des protèines urinaires 180 241,2
+identification d'un calcul urinaire 80 107,2
+Ph 10 13,4
+Phosphore minéral 40 53,6
+Potassium 30 40,2
+Protéine ( recherche) 20 26,8
+Protéine (dosage) 30 40,2
+Sédiment minéral 30 40,2
+Sodium 30 40,2
+Sucre (recherche) 10 13,4
+Sucre (recherche + dosage) 30 40,2
+Urée 30 40,2
+Hormonologie
+Analyse B Prix en DH
+Acide 5 hydroxyindol acétique (5 HIA) 250 335
+Acide vanyl mandélique (VMA) 250 335
+Acide hormovanilique 250 335
+Catécholamines 250 335
+17 cétosteroides 250 335
+Dérivés méthoxylés (Mtanéphrines-normétanéphrines) 250 335
+Phenolstéroides 250 335
+Porphyrines (recherche) 100 134
+Porphyrines (dosage) 150 201
+Prégnandiol 250 335
+Prolans B 200 268
+Test de grossesse 80 107,2
+3- Examens des autres liquides biologiques
+Analyse B Prix en DH
+Chlore 30 40,2
+Electrophorèse des protéines du LCR 180 241,2
+Fructose spermatique 200 268
+Glucose 20 26,8
+Identification d'un calcul vésical 80 107,2
+Protéines 30 40,2
+Recherche et identification d'antigènes Bactériens 250 335
+solubles dans le LCR
+Rivaltat 20 26,8
+4- Epreuves fonctionnelles
+Analyse B Prix en DH
+Clearances de l'acide urique 50 67
+Clearances de l'urée 50 67
+Clearances de la créatinine 50 67
+Epreuve d'hyperglycémie provoquée par voie orale 150 201
+HLM (hématies-leucocytes-minutes) test d'Addis 30 40,2
+Test au D-xylose 180 241,2
+Test LH-RH: (4 temps)  Sur FSH ou LH 700 938
+Test LH-RH: (4 temps)  Sur FSH et LH 1200 1608
+Bactériolo
+gie parasitologie mycologie
+Analyse B Prix en DH
+Cytologie, culture, identification 90 120,6
+Antibiogramme 60 80,4
+Sulfamidogramme 60 80,4
+En cas de préscription isolée
+Cytologie 20 26,8
+Examen parasitologique urinaire ou vaginal 20 26,8
+Examen mycologique: (recherche ) 30 40,2
+Examen mycologique: ( Culture, identification ) 60 80,4
+Recherche de BK+ Concentration 35 46,9
+Culture de Lowenstein 30 40,2
+Hémoculture:
+Culture ( Aérobie-Anaérobie ) 80 107,2
+Identification 30 40,2
+Recherche Chlamydiae direct par IA ou IF 200 268
+Recherche de Mycoplasmes par culture 200 268
+( LCR-Ascites-liquides pleuraux)
+Tout examen cytobactériologique ( Urinaire, Vaginal, Uréthral, Nasal, Pleural,
+Ascitique, Auriculaire, Crachats, LCR,etc…)
+Examen des selles:
+Parasitologie (Examen direct + enrichisement) 40 53,6
+Coproculture + identification: 100 134
+Recherche de sang par méthode colorimétrique 60 80,4
+Recherche de sang par méthode immunologique 150 201
+Coprologie fonctionnelle 150 201
+Rotavirus 200 268
+Adénovirus 200 268
+scttch test 20 26,8
+Ectoparasites ( Galle ) recherche 50 67
+Sero-diagnostic
+2- Sérologie bactérienne
+Analyse B Prix en DH
+Antistaphylolysine 50 67
+Antistreptodornase 100 134
+Antistreptokinase 100 134
+Antistreptolysine (Recherche, tirage) 80 107,2
+Antistreptohyaluronidase 100 134
+Brucellose (Wright) 60 80,4
+Chlamydiae trachomatis 180 241,2
+Hélicobacter pylori 180 241,2
+Diphtérie 190 254,6
+Gonococcie 150 201
+Léptospirose 150 201
+Listériose 250 335
+Maladie de Lyme 250 335
+Mycoplasmes génitaux ( Hominis et uréalyticum) 180 241,2
+Mycoplasma pneumoniae 180 241,2
+Rickettsiose 180 241,2
+Salmonellose (Widal et Félix) 80 107,2
+Shigellose: l'espèce 75 100,5
+Streptozyme 100 134
+Sérologie du BK 200 268
+Sérologie de la Syphilis:
+VDRL qualitatif 20 26,8
+VDRL quantitatif 60 80,4
+TPHA qualitatif 50 67
+TPHA quantitatif 100 134
+Nelson 500 670
+FTA Absorbens IgG 120 160,8
+IgM 280 375,2
+2- Sérologie parasitaire
+Analyse B Prix en DH
+Ankylostomiase 300 402
+Amibiase 150 201
+Aspergillose 150 201
+Bilharziose 150 201
+Hydatidose 150 201
+Blastomycose 75 100,5
+Candidose 200 268
+Coccidiomycose 110 147,4
+Cryptococcose 110 147,4
+Criptosporidiose 150 201
+Cysticércose 315 422,1
+Distomatose 150 201
+Filariose 225 301,5
+Histoplasmose 110 147,4
+Leichmaniose 110 147,4
+Paludisme 110 147,4
+Toxocarose 315 422,1
+Toxoplasmose IgG 100 134
+Toxoplasmose IgM 150 201
+Taenia 90 120,6
+Trichonose 225 301,5
+Trichomonas 110 147,4
+Trypanosome 110 147,4
+3- Sérologie Virale
+Analyse B Prix en DH
+Adénovirus 110 147,4
+Grippe antigène B 200 268
+Hépatite A / IgG 250 335
+Hépatite A / IGM 250 335
+Hépatite B / Ag HBS 120 160,8
+Hépatite B / Ac anti Hbs 250 335
+Hépatite B / Ag Hbe 250 335
+Hépatite B / Ac anti Hbe 250 335
+Hépatite B / Ac anti Hbc 250 335
+Hépatite B / Ac anti Hbc IgM 300 402
+Hepatite B ADN par PCR 600 804
+Hepatite C / Dépistage 300 402
+Hepatite C / test de confirmation 600 804
+Hepatite C / ARN par PCR 900 1206
+Herpes virus simplex type I ( IgG ou IgM ) 200 268
+Herpes virus simplex type II ( IgG ou IgM ) 200 268
+HIV: HIV1+HIV (1+2) dépistage 200 268
+HIV: Westernblot de confirmation 600 804
+HIV: Charge virale HIV 900 1206
+Mononucléose infectieuse: MNI test 50 67
+Mononucléose infectieuse: Paul et Bunelle Davidson 80 107,2
+Ac EBNA 180 241,2
+Ac VCA 180 241,2
+Ac EA 180 241,2
+Oreillons ( IgG+IgM) 180 241,2
+Para influenzae vrus 110 147,4
+Coxackie 100 134
+Poliomyélite 110 147,4
+Rotavirus 200 268
+Rougeole IgG ou IgM 330 442,2
+Rubéole IgG 150 201
+Rubéole igM 400 536
+Varicelle et zona 200 268
+Virus Syncitial respiratoire 200 268
+4- Immunologie
+Analyse B Prix en DH
+Auto anticorps anti nucléaires 150 201
+AntiThyroidiens : Microsomaux 150 201
+AntiThyroidiens : Thyroglobulines 150 201
+Complément total CH50 100 134
+C3 150 201
+C4 150 201
+C1 Inhibiteur estérase 150 201
+IgE totales 200 268
+IgE spécifiques ou Rast: 1 Allergène 180 241,2
+IgE spécifiques ou Rast: à partir du 3èmeAllergène ( chacun) 140 187,6
+IgE spécifiques ou Rast: Test multi Allergènes 300 402
+Immunofixation des protides ou Immunoelectrophorèse 600 804
+Marqueurs tumoraux
+ACE 250 335
+AFP 250 335
+PSA 300 402
+Ca 125 400 536
+Ca 15 3 400 536
+Ca 19 9 400 536
+Ca 50 400 536
+Ca 72 4 400 536
+NSE 400 536
+Test au latex 50 67
+Tréaction de Waaler Rose 50 67
+CRP 100 134
+Haptoglobine 150 201
+Orosomucoides 150 201
+Transférrine 150 201
+Alpha 1 Antitrypsine 150 201
+IgG totales 150 201
+IgA totales 150 201
+IgM totales 150 201
+5- Divers
+Analyse B Prix en DH
+Crèatorrhéé 100 134
+Spermogramme 100 134
+Spermocytogramme 150 201
+Stéatorrhée 300 402
+Test de Huhner 120 160,8
+Analyse B Prix en DH
+17 Hydroxyprogestèrone 400 536
+25 Hydroxy cholescalciférol 450 603
+ACTH 400 536
+ADH 400 536
+ADN Viral HBV 600 804
+Aldostérone 400 536
+Aluminium 180 241,2
+Androstenédiol 400 536
+Anticorps Anti canneaux biliaires 200 268
+Anticorps Anti cartilage 200 268
+Anticorps Anti cellules nerveuses 200 268
+Anticorps Anti ECT 500 670
+Anticorps Anti Facteur intrinsèque 450 603
+PRESCRIPTIONS POUVANT FAIRE L'OBJET DE TRANSMISSION A L'ETRANGER
+Anticorps Anti organes (autres) 200 268
+Anticorps Anti Plaquettes fixées 450 603
+Anticorps Anti T3 450 603
+Anticorps Anti T4 450 603
+Anticorps Viral HCV 900 1206
+Ca 50 400 536
+Calcitonine 400 536
+Carnitine libre 400 536
+Charges Virale HIV 900 1206
+Citrate dans le sperme 200 268
+Complément C2 240 321,6
+Complément C5 150 201
+Delta 4 Androsténe dione 400 536
+DHA 400 536
+DHA sulfate 400 536
+DHT 400 536
+EBV: EARLY ou VCA ( IgG+IgM) ou EBNA chacun 400 536
+EBV: ECA 450 603
+Elastase 600 804
+Erytropïoetine 400 536
+Fibronectine 150 201
+Gastrine 400 536
+GH ou STH 400 536
+Glucagon 400 536
+Hépatite E 400 536
+Hépatite Delta 300 402
+Hydroxyproline 400 536
+IgG 4 ( sous classe) 200 268
+II Deoxycortisol 300 402
+Médicaments ( digoxine théophylline ) chacun 300 402
+Nelson 500 670
+Ostéocalcine 400 536
+Parathormone 400 536
+Peptide C 400 536
+Rénine 400 536
+Sérotonine 300 402
+Somatomédine C 400 536
+TBG 400 536
+Te BG 400 536
+Test à la STH 1200 1608
+Thyrocalcitonine 400 536
+Virus (culture) 300 402
+Vitamine B12 400 536
+Vitamine D 450 603
+Autres vitamines ( K-A-E) chacune 800 1072
+Zinc dans le sperme 200 268

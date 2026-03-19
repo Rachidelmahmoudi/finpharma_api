@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'website' %}
+{% block body %}
+<div class="container margin_60">
+    <div class="row">
+        <div class="col-xl-8 col-lg-8 m-auto">
+            <div class="card-title">{{ 'my_view.title' | trans }}</div>
+            <div id="section_1">
+                <div class="box_general_3">
+                    <div class="profile">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-4">
+                                <figure>
+                                    <img src="{{ asset('img/logo.png') }}" width="200" alt="" class="img-fluid">
+                                </figure>
+                            </div>
+                            <div class="col-lg-7 col-md-8">
+                                <small>{{ establishement.customType }}</small>
+                                <h1>{{ establishement.name }}</h1>
+                                <ul class="contacts">
+                                    <li>
+                                        <h6>{{ 'my_view.address' | trans }}</h6>
+                                        {{ establishement.customAddress }} - {{ establishement.customCity }}
+                                        <a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361"
+                                            target="_blank"> <strong>View on map</strong></a>
+                                    </li>
+                                    <li>
+                                        <h6>{{ 'my_view.phone' | trans }}</h6> <a href="tel://000434323342">{{ establishement.customPhone }}</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- /profile -->
+                    <div class="indent_title_in">
+                        <i class="pe-7s-info"></i>
+                        <h3>{{ 'my_view.description' | trans }}</h3>
+                    </div>
+                    <div class="wrapper_indent">
+                        {{ establishement.description | raw }}
+                    </div>
+                </div>
+                <!-- /section_1 -->
+            </div>
+            <!-- /box_general -->
+        </div>
+        <!-- /col -->
+    </div>
+</div>
+{% endblock %}

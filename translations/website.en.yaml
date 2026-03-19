@@ -1,0 +1,97 @@
+menu:
+    home: Home
+    pharmacies: pharmacies
+    services: Services
+    laboratories: laboratories
+    doctors: Médecins
+    medications: Medicaments
+    contact: Contact
+    add_my_establishment: Ajouter mon établissement
+    userful_links: userful links
+    clinics: clinics
+    download_app: Download app
+    contact_with_us: Contact with us
+    terms_and_conditions: Terms and condiitions
+    privacy: privacy
+    add_my_establishement: Ajouter mon etablissment
+    my_establishement: My establishement
+    profile: Profile
+    logout: Se deconnecter
+index:
+    hero:
+        slogan : Trouver les établissements de santé à proximité en un clic.
+        search: Search
+        title: Votre annuaire de santé au Maroc
+    services:
+        title: Professionnel de santé ? développez votre <strong>présence</strong> digitale !
+        sub_title: Une plateforme simple pour ajouter et administrer votre établissement de santé en ligne.
+        see_more: En savoir plus
+        pharmacy:
+            title: Je suis pharmacien
+            text: Rejoignez plus de 17 000 pharmacies et gérez facilement vos horaires de garde et assurez une meilleure visibilité.
+        medecine:
+            title: Ajoutez votre cabinet
+            text: Inscrivez votre cabinet médical, gérez vos informations et améliorez votre visibilité digitale.
+        medication:
+            title: Inscrivez votre laboratoire
+            text: Ajouter votre laboratoire et améliorez votre visibilité en communiquant clairement vos analyses et tarifs.
+    application:
+        title: Application
+        subtitle: Telecharger <strong>FinPharma</strong>!
+        description: Téléchargez-la dès maintenant et profitez d'une expérience de santé à portée de main !
+    results:
+        book: Book Now
+        view_on_map: Voir sur map
+        directions: Directions
+        type: Type
+        global_search.all: All
+        global_search.pharmacies: Pharmacies
+        global_search.medecins: Medecins
+        global_search.laboratories: Laboratoires
+        empty: No results found!
+registration:
+    peronal_infos: informations personnelles
+    select_your_domain: Choisssez votre type d'etablissment
+    business_infos: Informations Professionnelles
+    terms_and_conditions: I accept <a href="#">terms and conditions and general policy</a>
+    submit: Validate
+    required_field_notice: <small>* Champs obligatoires</small>
+    verification:
+        fromName: Finpharma team
+        subjet: Please Confirm your Email
+    title: Please register to FinPharma!
+login:
+    title: Please login to FinPharma!
+    your_logged_as: You are logged in as {user}, <a href="{{ path('app_logout') }}">Logout</a>
+    you_dont_have_yet: Do not have an account yet?
+    create_account: Create account
+    forget_password: Forgot password?
+    login_with_facebook: Login with Facebook
+    login_with_google: Login with Google
+    login_with_linkedin : Login with Linkedin
+
+reset_password:
+    create: Create your password
+    reset: Reset your password
+    send_email: Send password reset email
+
+my_view:
+    title: Mon espace
+    address: Addresse
+    phone: Telephones
+    description: Description
+    agenda: Planing
+    garde: Mes horaires de garde
+
+
+blog:
+    home: Acceuil
+    blog: Blog
+    blog_pharmacist_title: Pourquoi rejoindre FinPharma en tant que pharmacien ?
+    blog_doctor_title: Pourquoi rejoindre votre cabinet ou clinique médicale sur FinPharma ?
+    blog_laboratory_title: Pourquoi rejoindre votre laboratoire d’analyses médicales sur FinPharma ?
+    
+    
+
+        
+        

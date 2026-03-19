@@ -1,0 +1,95 @@
+{% trans_default_domain 'website' %}
+	<div id="results">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<h4><strong>Showing 10</strong> of  {{ pagination.getTotalItemCount }} results</h4>
+				</div>
+				<div class="col-md-6">
+					{{ form_start(global_search, {'attr' : {'class' : 'search_bar_list'}}) }}
+					{{ form_widget(global_search.query, {'attr' : {'class' : 'form-control', 'placeholder': 'global_search.search_placeholder'}}) }}
+					{{ form_row(global_search.type, {'attr' : {'class' : 'd-none'}, 'label_attr' : {'class': 'd-none'}}) }}
+					<input type="submit" value="Search">
+					{{ form_end(global_search) }}
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /results -->
+
+	<div class="filters_listing">
+		<div class="container">
+			<ul class="clearfix">
+				<li>
+					<h6>{{ 'index.results.type' | trans }}</h6>
+					<div class="switch-field">
+						<input type="radio" onclick="checkType(this);" id="all" name="type_patient" value="all">
+						<label for="all">{{ 'index.results.global_search.all' | trans }}</label>
+						{% for key, value in enum('App\\Form\\SearchTypes').types() %}
+							<input type="radio" onclick="checkType(this);" {% if active_type == value %}checked{% endif %} id="{{key}}" name="type_patient" value="{{value}}">
+							<label for="{{key}}">{{ ('index.results.' ~ key) | trans }}</label>
+						{% endfor %}
+					</div>
+				</li>
+				{# <li>
+					<h6>Layout</h6>
+					<div class="layout_view">
+						<a href="grid-list.html"><i class="icon-th"></i></a>
+						<a href="#0" class="active"><i class="icon-th-list"></i></a>
+						<a href="list-map.html"><i class="icon-map-1"></i></a>
+					</div>
+				</li> #}
+				{# <li>
+					<h6>Sort by</h6>
+					<select name="orderby" class="selectbox">
+						<option value="Closest">Closest</option>
+						<option value="Best rated">Best rated</option>
+						<option value="Men">Men</option>
+						<option value="Women">Women</option>
+					</select>
+				</li> #}
+			</ul>
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /filters -->
+
+	<div class="container margin_60_35">
+		<div class="row">
+			<div class="col-lg-7">
+				{% for item in results %}
+					{% include 'parts/_' ~ (item | type) ~ '_card.html.twig' %}
+				{% else %}
+					<div class="empty-result text-center">{{ 'index.results.empty' | trans }}</div>
+				{% endfor %}
+				<nav aria-label="" class="add_top_20">
+					{{ knp_pagination_render(pagination) }}
+				</nav>
+				<!-- /pagination -->
+			</div>
+			<!-- /col -->
+
+			<aside class="col-lg-5" id="sidebar">
+				<div id="map_listing" class="normal_list">
+				</div>
+			</aside>
+			<!-- /aside -->
+
+		</div>
+		<!-- /row -->
+	</div>
+	<!-- /container -->
+	<script>
+	function checkType(elm) {
+		document.querySelector('input[value='+elm?.value+']').checked = true;
+		document.forms?.main_search.submit();
+	}
+	</script>
+	<script
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu7Nj2MVP5JAgWJRzF4tWhIYXhECV49lU">
+	</script>
+	<script src="https://www.ansonika.com/findoctor/js/markerclusterer.js"></script>
+	<script src="{{ asset('js/map.js') }}"></script>
+	<script src="https://www.ansonika.com/findoctor/js/infobox.js"></script>

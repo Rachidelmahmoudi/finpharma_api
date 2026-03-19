@@ -1,0 +1,319 @@
+[
+  {
+    "name": "Marrakech",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-marrakech.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Palmeraie Elbahja",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: AÏn Itti",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Dar Tounsi",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Daoudiat",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Masjid Daoudiate",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Ihssane",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Boustane",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Les Narcisses",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Grand Gueliz",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Moukawama",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Bab Jdid",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Fleming",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Les Cypres",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Al Izdihar",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Centrale AlIzdihar",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Hassani",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Yassine",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Salaheddine El Ayoubi",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Abwab AlKhair",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie AlAndalous",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie AlKhabir",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Lamhamid",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Ibn Sina Ex Noun Oualkalam",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Principale Chrifia",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Ibn Zohr",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Zaparojie",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Medina",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie de la Place",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie de Marrakech",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Nakhil Sud",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Chams Nakhil",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Ghanem Azzouzia",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Ayour Ex Azzouzia",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Hay Sinai",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Youssef",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Jardins D 039 Agdal",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Targa",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Sofia",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "quartier": "Quartier: Ain Itti",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Fekhara",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Daoudiat",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Dubai",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              },
+              {
+                "pharmacy": "Pharmacie Sidi Ouaggag",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Grand Gueliz",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Palacio",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              },
+              {
+                "pharmacy": "Pharmacie AlAtlas",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Al Izdihar",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Route De Safi",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Hassani",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Azli",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              },
+              {
+                "pharmacy": "Pharmacie Hay ElHassani",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Lamhamid",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie LaÂrif",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Medina",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Riad LaÂrouss",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Nakhil Sud",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Lakhili",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Ghanem Azzouzia",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Bassatine Targa",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Youssef",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Bastoun",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Targa",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Salam",
+                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

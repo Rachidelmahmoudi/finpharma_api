@@ -1,0 +1,185 @@
+{% trans_default_domain 'website' %}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text><text y=%221.3em%22 x=%220.2em%22 font-size=%2276%22 fill=%22%23fff%22>sf</text></svg>">
+     <!-- GOOGLE WEB FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+        
+    {% block stylesheets %}
+    <!-- BASE CSS -->
+    <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/style.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/menu.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/vendors.css') }}" rel="stylesheet">
+    <link href="{{ asset('css/icon_fonts/css/all_icons_min.css') }}" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.14.1/build/css/intlTelInput.css">
+
+    <!-- YOUR CUSTOM CSS -->
+    <link href="{{ asset('css/custom.css') }}" rel="stylesheet">
+    {% endblock %}
+    {# <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7uK9hUj04ZrYSlFJcIVMOi-ayjtWuYYU&loading=async&callback=initMap"></script> #}
+</head>
+
+<body>
+    <div class="layer"></div>
+    <!-- Mobile menu overlay mask -->
+
+    <div id="preloader">
+        <div data-loader="circle-side"></div>
+    </div>
+    <!-- End Preload -->
+
+    <header class="header_sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-6">
+                    <div id="logo_home">
+                        <h1><a href="{{ path('index') }}" title="FinPharma">FinPharma</a></h1>
+                    </div>
+                </div>
+                <nav class="col-lg-9 col-6">
+                    <a class="cmn-toggle-switch cmn-toggle-switch__htx open_close" href="#0"><span>Menu
+                            mobile</span></a>
+                    <ul id="top_access">
+                        <li>
+                            {% if app.user.establishments|default([])|length > 0 %}
+                                <a href="{{ path('my_establishement') }}" class="btn_1 add-establishement">{{ 'menu.my_establishement' | trans }}</a>
+                            {% else %}
+                                <a href="{{ path('add_establishement') }}" class="btn_1 add-establishement">{{ 'menu.add_my_establishement' | trans }}</a>
+                            {% endif %}
+                        </li>
+                        {% if app.user %}
+                        <li class="menu-item profile-menu">
+                            <a href="#" class="profile-link">
+                                {% if userInformation is defined and userInformation.profilePicture is not empty %}
+                                    <img src="{{ userInformation.profilePicture }}" class="img-fluid"  alt="" />
+                                {% else %}
+                                    <i class="pe-7s-user"></i>
+                                {% endif %}
+                            </a>
+                            <ul class="profile-dropdown">
+                                <li><a href="{{ path('profile') }}">{{ 'menu.profile' | trans }}</a></li>
+                                <li><a href="{{ path('logout') }}" class="logout">{{ 'menu.logout' | trans }}</a></li>
+                            </ul>
+                            </li>
+                        {% endif %}
+                    </ul>
+                    <div class="main-menu">
+                        <ul>
+                            <li><a href="{{ path('index') }}">{{ 'menu.home' | trans }}</a></li>
+                            <li class="submenu">
+                                <a href="#0" class="show-submenu">{{ 'menu.services' | trans }}<i class="icon-down-open-mini"></i></a>
+                                <ul>
+                                    <li><a href="{{ path('get_pharmacies') }}">{{ 'menu.pharmacies' | trans }}</a></li>
+                                    <li><a href="index-8.html">{{ 'menu.laboratories' | trans }}</a></li>
+                                    <li><a href="index-2.html">{{ 'menu.doctors' | trans }}</a></li>
+                                    <li><a href="index-2.html">{{ 'menu.medications' | trans }}</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="{{ path('index') }}"> {{ 'menu.contact' | trans }}</a></li>
+                        </ul>
+                    </div>
+                    <!-- /main-menu -->
+                </nav>
+            </div>
+        </div>
+        <!-- /container -->
+    </header>
+    <!-- /header -->
+    <main>
+        {% block body %}{% endblock %}
+    <main />
+
+    <footer>
+        <div class="container margin_60_35">
+            <div class="row">
+                <div class="col-lg-3 col-md-12">
+                    <p>
+                        <a href="index.html" title="Findoctor">
+                            <img src="{{ asset('img/logo.png') }}" data-retina="true" alt="" width="163" height="36"
+                                class="img-fluid">
+                        </a>
+                    </p>
+                </div>
+                {# <div class="col-lg-3 col-md-4">
+                    <h5>About</h5>
+                    <ul class="links">
+                        <li><a href="#0">About us</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#0">FAQ</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="register.html">Register</a></li>
+                    </ul>
+                </div> #}
+                <div class="col-lg-3 col-md-4">
+                    <h5>{{ 'menu.userful_links' | trans }}</h5>
+                    <ul class="links">
+                        <li><a href="#0">{{ 'menu.doctors' | trans }}</a></li>
+                        <li><a href="#0">{{ 'menu.clinics' | trans }}</a></li>
+                        <li><a href="#0">{{ 'menu.download_app' | trans }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-4">
+                    <h5>{{ 'menu.contact_with_us' | trans }}</h5>
+                    <ul class="contacts">
+                        <li><a href="tel://61280932400"><i class="icon_mobile"></i> + 61 23 8093 3400</a></li>
+                        <li><a href="mailto:info@findoctor.com"><i class="icon_mail_alt"></i> help@findoctor.com</a>
+                        </li>
+                    </ul>
+                    <div class="follow_us">
+                        <h5>{{ 'menu.follow_us' | trans }}</h5>
+                        <ul>
+                            <li><a href="#0"><i class="social_facebook"></i></a></li>
+                            <li><a href="#0"><i class="social_linkedin"></i></a></li>
+                            <li><a href="#0"><i class="social_instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--/row-->
+            <hr>
+            <div class="row">
+                <div class="col-md-8">
+                    <ul id="additional_links">
+                        <li><a href="#0">{{ 'menu.terms_and_conditions' | trans }}</a></li>
+                        <li><a href="#0">{{ 'menu.privacy' | trans }}</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <div id="copy">© FinPharma</div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/footer-->
+    <div id="toTop"></div>
+    <!-- Back to top button -->
+
+    <!-- COMMON SCRIPTS -->
+    <script src="https://www.ansonika.com/findoctor/js/jquery-3.7.1.min.js"></script>
+    <script src="https://www.ansonika.com/findoctor/js/common_scripts.min.js"></script>
+    <script src="https://www.ansonika.com/findoctor/js/functions.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.14.1/build/js/intlTelInput.min.js"></script>
+    <script src="https://cdn.tiny.cloud/1/no-api-key/tinymce/8/tinymce.min.js"
+  referrerpolicy="origin"></script>
+    <script>
+        $(document).ready(function() {
+            $('.select2').select2();
+        });
+    </script>
+    {% block javascripts %}
+        
+    {% endblock %}
+</body>
+
+</html>

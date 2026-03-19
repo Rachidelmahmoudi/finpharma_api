@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'website' %}
+{% block body %}
+<div class="bg_color_2">
+	<div class="container margin_60_35">
+		<div id="register">
+			<h1>{{ 'reset_password.create' | trans }}</h1>
+			<div class="row justify-content-center">
+				<div class="col-md-5">
+                {{ form_start(resetForm) }}
+                    {{ form_row(resetForm.plainPassword) }}
+                    <button class="btn btn-primary">{{ 'reset_password.create' | trans }}</button>
+                {{ form_end(resetForm) }}
+            </div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /register -->
+	</div>
+</div>
+{% endblock %}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Opening App...</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+  <div style="text-align: center; padding: 50px;">
+    <h2>Opening App...</h2>
+    <p id="message">Please wait...</p>
+  </div>
+
+  <script>
+    // Parse URL parameters
+    const urlParams = new URLSearchParams(window.location.search);
+    const pharmacyId = urlParams.get('pharmacyId') || '';
+    
+    // Construct deep link
+    const deepLink = `finpharma://share?pharmacyId=${pharmacyId}`;
+    
+    // App Store URLs
+    const iosAppStoreUrl = 'https://apps.apple.com/app/ma.finpharma.com';
+    const androidPlayStoreUrl = 'https://play.google.com/store/apps/details?id=ma.finpharma.com';
+    
+    // Detect platform
+    const isIOS = /iPhone|iPad|iPod/.test(navigator.userAgent);
+    const isAndroid = /Android/.test(navigator.userAgent);
+    
+    // Try to open the app
+    window.location.href = deepLink;
+    
+    // Set timeout to redirect to store if app doesn't open
+    let appOpened = false;
+    const timeout = setTimeout(() => {
+      if (!appOpened) {
+        document.getElementById('message').textContent = 'Redirecting to store...';
+        
+        if (isIOS) {
+          window.location.href = iosAppStoreUrl;
+        } else if (isAndroid) {
+          window.location.href = androidPlayStoreUrl;
+        } else {
+          document.getElementById('message').textContent = 'Please download the app from your app store';
+        }
+      }
+    }, 2000);
+    
+    // Detect if user returns to page (app didn't open)
+    window.addEventListener('blur', () => {
+      appOpened = true;
+      clearTimeout(timeout);
+    });
+    
+    // Detect visibility change
+    document.addEventListener('visibilitychange', () => {
+      if (document.hidden) {
+        appOpened = true;
+        clearTimeout(timeout);
+      }
+    });
+  </script>
+</body>
+</html>

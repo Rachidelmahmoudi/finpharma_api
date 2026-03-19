@@ -1,0 +1,97 @@
+{% trans_default_domain 'website' %}
+{% extends 'blog/blog_layout.html.twig' %}
+
+{% block title %}Hello BlogController!{% endblock %}
+
+{% block blog_content %}
+    <div class="container margin_60">
+			<div class="row">
+				<div class="col-lg-9">
+					<article class="blog wow fadeIn">
+						<div class="row g-0">
+							<div class="col-lg-7">
+								<figure>
+									<a href="{{ path('pharmacist_blog') }}"><img src="{{ asset('img/pharmacy-and-phone.jpg') }}" alt=""><div class="preview"><span>Read more</span></div></a>
+								</figure>
+							</div>
+							<div class="col-lg-5">
+								<div class="post_info">
+									<small>20 Nov. 2017</small>
+									<h3><a href="{{ path('pharmacist_blog') }}">{{ 'blog.blog_pharmacist_title' | trans }}</a></h3>
+									<p>Pendant des années, informer les citoyens des pharmacies de garde s’est fait de la même manière : affiches papier collées sur les portes des pharmacies...</p>
+									<ul>
+										<li>
+											<div class="thumb"><img src="img/thumb_blog.jpg" alt=""></div> Jessica Hoops
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+					<!-- /article -->
+					<article class="blog wow fadeIn">
+						<div class="row g-0">
+							<div class="col-lg-7">
+								<figure>
+									<a href="{{ path('doctor_blog') }}"><img src="{{ asset('img/doctor-rating.jpg') }}" alt=""><div class="preview"><span>Read more</span></div></a>
+								</figure>
+							</div>
+							<div class="col-lg-5">
+								<div class="post_info">
+									<small>20 Nov. 2017</small>
+									<h3><a href="{{ path('doctor_blog') }}">{{ 'blog.blog_doctor_title' | trans }}</a></h3>
+									<p>Aujourd’hui, choisir un médecin ou une clinique n’est pas une décision anodine. Au Maroc, ce choix repose avant tout sur la confiance, la recommandation d’un proche...</p>
+									<ul>
+										<li>
+											<div class="thumb"><img src="img/thumb_blog.jpg" alt=""></div> Jessica Hoops
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+					<!-- /article -->
+
+					<article class="blog wow fadeIn">
+						<div class="row g-0">
+							<div class="col-lg-7">
+								<figure>
+									<a href="{{ path('laboratory_blog') }}"><img src="{{ asset('img/laboratory-app.jpg') }}" alt=""><div class="preview"><span>Read more</span></div></a>
+								</figure>
+							</div>
+							<div class="col-lg-5">
+								<div class="post_info">
+									<small>20 Nov. 2017</small>
+									<h3><a href="{{ path('laboratory_blog') }}">{{ 'blog.blog_laboratory_title' | trans }}</a></h3>
+									<p>Au Maroc, le parcours de soins passe très souvent par le laboratoire d’analyses médicales. Après une consultation, le médecin oriente le patient vers un laboratoire...</p>
+									<ul>
+										<li>
+											<div class="thumb"><img src="img/thumb_blog.jpg" alt=""></div> Jessica Hoops
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</article>
+					<!-- /article -->
+				</div>
+				<!-- /col -->
+				
+				<aside class="col-lg-3">
+					<div class="widget">
+						<form>
+							<div class="form-group">
+								<input type="text" name="search" id="search" class="form-control" placeholder="Search...">
+							</div>
+							<button type="submit" id="submit" class="btn_1"> Search</button>
+						</form>
+					</div>
+					<!-- /widget -->
+					
+				</aside>
+				<!-- /aside -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+{% endblock %}

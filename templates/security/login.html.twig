@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Log in!{% endblock %}
+{% trans_default_domain 'website' %}
+{% block body %}
+<div class="bg_color_2">
+    <div class="container margin_60_35">
+        <div id="login-2">
+            <h1>{{ 'login.title' | trans }}</h1>
+            <form method="post">
+                {% if app.user %}
+                    <div class="mb-3">
+                        {{ 'login.your_logged_as' | trans({'user': app.user.userName}) }}
+                    </div>
+                {% endif %}
+                <div class="box_form clearfix">
+                    <div class="box_login">
+                        <a href="#0" class="social_bt facebook">{{ 'login.login_with_facebook' | trans }}</a>
+                        <a href="{{ path('hwi_oauth_service_redirect', {'service': 'google' }) }}" class="social_bt google">{{ 'login.login_with_google' | trans }}</a>
+                        <a href="{{ path('hwi_oauth_service_redirect', {'service': 'linkedin' }) }}" class="social_bt linkedin">{{ 'login.login_with_linkedin' | trans }}</a>
+                    </div>
+                    <div class="box_login last">
+                    {% if error %}
+                        <div class="alert alert-danger">{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+                    {% endif %}
+                        <div class="form-group">
+                            <input type="email" value="{{ last_username }}" name="_username" id="username" class="form-control" autocomplete="email" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" name="_password" id="password" class="form-control" autocomplete="current-password" required>
+                            <a href="{{ path('app_forgot_password_request') }}" class="forgot"><small>{{ 'login.forget_password' | trans }}</small></a>
+                        </div>
+                        <div class="form-group">
+                            <input class="btn_1" type="submit" value="{{ 'login.submit' | trans }}">
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" name="_csrf_token" data-controller="csrf-protection" value="{{ csrf_token('authenticate') }}">
+            </form>
+            <p class="text-center link_bright">{{ 'login.you_dont_have_yet' | trans }} <a href="{{ path('register') }}" class="hilitheda"><strong>{{ 'login.create_account' | trans }}</strong></a></p>
+        </div>
+        <!-- /login -->
+    </div>
+</div>
+{% endblock %}

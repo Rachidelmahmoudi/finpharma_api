@@ -1,0 +1,103 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'website' %}
+{% block body %}
+    <div class="container margin_60">
+			<div class="row">
+				<div class="col-xl-8 col-lg-8">
+					<div class="card-title">{{ 'my_view.title' | trans }}</div>
+					<div id="section_1">
+						<div class="box_general_3">
+							<div class="profile">
+								<div class="row">
+									<div class="col-lg-5 col-md-4">
+										<figure>
+											<img src="{{ asset('/img/doctor.jpg') }}" alt="" class="img-fluid">
+										</figure>
+									</div>
+									<div class="col-lg-7 col-md-8">
+										<small>{{ doctor.specialty.name|default }}</small>
+										<h1>{{ doctor.name|default }}</h1>
+										<span class="rating">
+											<i class="icon_star voted"></i>
+											<i class="icon_star voted"></i>
+											<i class="icon_star voted"></i>
+											<i class="icon_star voted"></i>
+											<i class="icon_star"></i>
+											<small>(145)</small>
+											<a href="badges.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Badge Level" class="badge_list_1"><img src="img/badges/badge_1.svg" width="15" height="15" alt=""></a>
+										</span>
+										<ul class="statistic">
+											<li>854 Views</li>
+											<li>124 Patients</li>
+										</ul>
+										<ul class="contacts">
+											<li>
+												<h6>{{ 'my_view.address' | trans }}</h6>
+												{{ doctor.address|default }}  {{ doctor.city|default is not empty ? '- ' ~ doctor.city : '' }}
+											</li>
+											<li>
+												<h6>{{ 'my_view.phone' | trans }}</h6> 
+												<a href="tel://000434323342">{{ doctor.phone|default }}</a> 
+												{% if app.user.phone is not empty %}
+													- <a href="tel://000434323342">{{ app.user.phone }}</a>
+												{% endif %}
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							
+							<hr>
+							
+							<!-- /profile -->
+							<div class="indent_title_in">
+								<h3>{{ 'my_view.description' | trans }}</h3>
+							</div>
+							<div class="wrapper_indent">
+								{{ doctor.description|default|raw }}
+							</div>
+							<!-- /wrapper indent -->
+						</div>
+						<!-- /section_1 -->
+					</div>
+					<!-- /box_general -->
+				</div>
+				<aside class="col-xl-4 col-lg-4 doctor-calendar" >
+					<div class="card-title">{{ 'my_view.agenda' | trans }}</div>
+					<div id="section_1">
+						<div class="box_general_3">
+							<div id='calendar'></div>
+						</div>
+					</div>
+				</aside>
+				<!-- /col -->
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /container -->
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+		 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.20/index.global.min.js'></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				var calendarEl = document.getElementById('calendar');
+				var calendar = new FullCalendar.Calendar(calendarEl, {
+					initialView: 'timeGridDay',
+					headerToolbar: false,
+					locale: 'fr',
+					titleFormat: { year: 'numeric', month: 'short', day: 'numeric' },
+					buttonText: {
+						today:    "{{ 'my_view.today' | trans }}",
+						month:    'month1',
+						week:     'week1',
+						day:      'day1',
+						list:     'list1'
+					} 
+				});
+				calendar.render();
+			});
+		</script>
+{% endblock %}

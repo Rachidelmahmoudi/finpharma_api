@@ -1,0 +1,118 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'website' %}
+{% block body %}
+		<div id="hero_register">
+			<div class="container margin_120_95">			
+				<div class="row">
+					<div class="col-lg-6">
+						<h1>It's time to find you!</h1>
+						<p class="lead">Te pri adhuc simul. No eros errem mea. Diam mandamus has ad. Invenire senserit ad has, has ei quis iudico, ad mei nonumes periculis.</p>
+						<div class="box_feat_2">
+							<i class="pe-7s-map-2"></i>
+							<h3>Let patients to Find you!</h3>
+							<p>Ut nam graece accumsan cotidieque. Has voluptua vivendum accusamus cu. Ut per assueverit temporibus dissentiet.</p>
+						</div>
+						<div class="box_feat_2">
+							<i class="pe-7s-date"></i>
+							<h3>Easly manage Bookings</h3>
+							<p>Has voluptua vivendum accusamus cu. Ut per assueverit temporibus dissentiet. Eum no atqui putant democritum, velit nusquam sententiae vis no.</p>
+						</div>
+						<div class="box_feat_2">
+							<i class="pe-7s-phone"></i>
+							<h3>Instantly via Mobile</h3>
+							<p>Eos eu epicuri eleifend suavitate, te primis placerat suavitate his. Nam ut dico intellegat reprehendunt, everti audiam diceret in pri, id has clita consequat suscipiantur.</p>
+						</div>
+					</div>
+					<!-- /col -->
+					<div class="col-lg-6 ml-auto">
+						<div class="box_form">
+                        {% for flash_error in app.flashes('verify_email_error') %}
+                            <div class="alert alert-danger" role="alert">{{ flash_error }}</div>
+                        {% endfor %}
+							{{ form_start(form) }}
+								<div class="row">
+									<div class="col-md-12">
+                                        {{ form_label(form.type) }}
+                                        <div id="radio-tags">
+                                            <ul>
+                                            {% for radio in form.type.children %}
+                                                <li>
+                                                {{ form_widget(radio, {'label_attr' : {'class' : 'text-uppercase'}}) }}
+                                                </li>
+                                            {% endfor %}
+                                            </ul>
+                                        </div>
+									</div>
+								</div>
+                                {% if form.business is defined %}
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            {{ form_row(form.business) }}
+                                        </div>
+                                    </div>
+									<div class="row">
+										<div class="col-md-12">
+											{{ 'registration.required_field_notice' | trans | raw }}
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12 text-center">
+											{{ form_row(form.save) }}
+										</div>
+									</div>
+                                {% endif %}
+								<!-- /row -->
+                            {{ form_end(form) }}
+						</div>
+						<!-- /box_form -->
+					</div>
+					<!-- /col -->
+				</div>
+				<!-- /row -->
+			</div>
+			<!-- /container -->
+		</div>
+		<!-- /hero_register -->
+        
+{% endblock %}
+
+{% block javascripts %}
+	<script src="https://cdn.ckeditor.com/ckeditor5/47.4.0/ckeditor5.umd.js"></script>
+	<link rel="stylesheet" href="https://cdn.ckeditor.com/ckeditor5/47.4.0/ckeditor5.css" />
+    <script>
+        function triggerBusiness(type) {
+            document.forms.registration_form.submit();
+        }
+        $(document).ready(function() {
+			const {
+				ClassicEditor,
+				Essentials,
+				Bold,
+				Italic,
+				Font,
+				Paragraph,
+				List,
+			} = CKEDITOR;
+
+			ClassicEditor
+				.create( document.querySelector('.wysiwyg'), {
+					licenseKey: 'eyJhbGciOiJFUzI1NiJ9.eyJleHAiOjE3NzA0MjIzOTksImp0aSI6IjdkYmRhMDhiLTFiNjItNDkyMy1iZDQwLWUyZmE4MGZmYmU5YSIsInVzYWdlRW5kcG9pbnQiOiJodHRwczovL3Byb3h5LWV2ZW50LmNrZWRpdG9yLmNvbSIsImRpc3RyaWJ1dGlvbkNoYW5uZWwiOlsiY2xvdWQiLCJkcnVwYWwiLCJzaCJdLCJ3aGl0ZUxhYmVsIjp0cnVlLCJsaWNlbnNlVHlwZSI6InRyaWFsIiwiZmVhdHVyZXMiOlsiKiJdLCJ2YyI6IjA0YzUxZTY4In0.rmJXOCjE6FXhLUifoJTst-IkHGhxP3eU0NjTdbVzjeqZ9VdC1wJGm7csZprnXl2m22lauB8Xqmw4x9d6mteI6A',
+					plugins: [ Essentials, Bold, Italic, Font, Paragraph ],
+					toolbar: [
+						'undo', 'redo', '|', 'bold', 'italic', '|',
+						'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor'
+					]
+				} )
+				.then( /* ... */ )
+				.catch( /* ... */ );
+            window.intlTelInput(document.querySelector(".phone"), {
+                initialCountry: "ma",
+  				separateDialCode: true,
+				hiddenInput: () => ({ phone: "add_establishement[business][phone][full_phone]", country: "add_establishement[business][phone][country_code]" }),
+                loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.14.1/build/js/utils.js"),
+            }); 
+        });
+    </script>
+{% endblock %}
+

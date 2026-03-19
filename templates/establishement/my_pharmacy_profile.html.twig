@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'website' %}
+{% block stylesheets %}
+	{{ parent() }}
+	<link href="{{ asset('css/date_picker.css') }}" rel="stylesheet" />
+{% endblock %}
+{% block body %}
+	{% set has_map_credentials = pharmacy.longitude is not empty and pharmacy.latitude is not empty %}
+    <div class="container margin_60">
+			<div class="row">
+				<aside class="col-xl-3 col-lg-4" id="sidebar">
+					<div class="box_profile">
+						<figure>
+							<img src="{{ asset('img/pharmacy-profile.jpg') }}" alt="" class="img-fluid">
+						</figure>
+						<small>{{ pharmacy.city }}</small>
+						<h1>{{ pharmacy.name }}</h1>
+						<ul class="contacts {{ has_map_credentials ? 'with-border' : '' }}">
+							<li><h6>{{ 'my_view.address'| trans }}</h6>{{ pharmacy.address }}</li>
+							<li><h6>{{ 'my_view.phone' | trans }}</h6><a href="tel://000434323342">{{ pharmacy.phone }}</a></li>
+						</ul>
+						{% if has_map_credentials %}
+							<div class="text-center"><a href="https://www.google.com/maps/dir//Assistance+%E2%80%93+H%C3%B4pitaux+De+Paris,+3+Avenue+Victoria,+75004+Paris,+Francia/@48.8606548,2.3348734,14z/data=!4m15!1m6!3m5!1s0x0:0xa6a9af76b1e2d899!2sAssistance+%E2%80%93+H%C3%B4pitaux+De+Paris!8m2!3d48.8568376!4d2.3504305!4m7!1m0!1m5!1m1!1s0x47e67031f8c20147:0xa6a9af76b1e2d899!2m2!1d2.3504327!2d48.8568361" class="btn_1 outline" target="_blank"><i class="icon_pin"></i> View on map</a></div>
+						{% endif %}
+					</div>
+				</aside>
+				<!-- /asdide -->
+				
+				<div class="col-xl-9 col-lg-8">
+					
+					<div class="box_general_2 add_bottom_45">
+						<div class="main_title_4">
+							<h3><i class="icon_circle-slelected"></i>{{ 'my_view.garde' | trans }}</h3>
+						</div>
+						
+						<div class="row add_bottom_45">
+							<div class="col-lg-12">
+								<div class="form-group">
+									<div id="calendar"></div>
+									<input type="hidden" id="my_hidden_input">
+									<ul class="legend">
+										<li><strong></strong>Available</li>
+										<li><strong></strong>Not available</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<!-- /row -->
+					</div>
+				</div>
+			</div>
+		<!-- /container -->
+    </div>
+{% endblock %}
+{% block javascripts %}
+	<script src="{{ asset('js/bootstrap-datepicker.js') }}"></script>
+	<script>
+		$('#calendar').datepicker({
+			todayHighlight: true,
+			daysOfWeekDisabled: [0],
+			weekStart: 1,
+			format: "yyyy-mm-dd",
+			multiple: true,
+			datesDisabled: ["2017/10/20", "2017/11/21","2017/12/21", "2018/01/21","2018/02/21","2018/03/21"],
+		});
+	</script>
+{% endblock %}

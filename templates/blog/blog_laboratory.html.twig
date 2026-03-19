@@ -1,0 +1,85 @@
+{% trans_default_domain 'website' %}
+{% extends 'blog/blog_layout.html.twig' %}
+
+{% block title %}{{ 'blog.blog_laboratory_title' | trans }}{% endblock %}
+{% block current_breadcrumb  %}
+     <li>{{ 'blog.blog_laboratory_title' | trans }}</li>
+{% endblock %}
+{% block blog_content %}
+    <div class="container margin_60">
+			<div class="row">
+				<div class="col-lg-9">
+					<div class="bloglist singlepost">
+						<p><img alt="" class="img-fluid" src="{{ asset('img/laboratory-app.jpg') }}"></p>
+						<h1 class="my-4">{{ 'blog.blog_laboratory_title' | trans }}</h1>
+						<!-- /post meta -->
+						<div class="post-content">
+							<div class="dropcaps mb-3">
+								<p>Au Maroc, le parcours de soins passe très souvent par le laboratoire d’analyses médicales.<br>
+                                Après une consultation, le médecin oriente le patient vers un laboratoire pour réaliser des examens indispensables au diagnostic et au suivi médical.</p>
+							</div>
+                            <p><b>FinPharma a été conçue pour rendre ce parcours plus simple, plus rapide et plus fiable</b>, aussi bien pour les médecins que pour les laboratoires.</p>
+                            <h2>Une visibilité claire pour votre laboratoire</h2>
+                            <p>En rejoignant FinPharma, votre laboratoire bénéficie :</p>
+                            <ul class="mb-3">
+                                <li>D’une page dédiée avec votre adresse, numéro de téléphone et localisation GPS</li>
+                                <li>D’une présence digitale professionnelle sur un annuaire santé spécialisé</li>
+                                <li>D’une visibilité auprès des patients et des médecins</li>
+                            </ul>
+                            <p>Les patients vous trouvent facilement, sans perte de temps ni confusion.</p>
+                            <h2>Transparence des analyses et des tarifs</h2>
+                            <p>FinPharma vous permet de :</p>
+                            <ul class="mb-3">
+                                <li>Afficher la liste des analyses proposées</li>
+                                <li>Indiquer clairement les prix des examens</li>
+                                <li>Aider les patients à mieux se préparer et à prendre une décision en toute confiance</li>
+                            </ul>
+                            <p>La transparence renforce la crédibilité et réduit les incompréhensions.</p>
+                            <h2 class="mt-4">Un espace laboratoire dédié et sécurisé</h2>
+                            <p>Grâce à l’Espace Laboratoire FinPharma, vous pouvez :</p>
+                             <ul class="mb-3">
+                                <li>Recevoir les demandes d’analyses envoyées directement par les médecins inscrits</li>
+                                <li>Transmettre les résultats au médecin de manière simple et organisée</li>
+                                <li>Centraliser les échanges dans un seul espace digital</li>
+                            </ul>
+                            <p>Moins de papier, moins d’appels, plus d’efficacité.</p>
+                            <h2>Une meilleure coordination avec les médecins</h2>
+                            <p>Si le médecin consultant est déjà présent sur FinPharma :</p>
+                            <ul class="mb-3">
+                                <li>La demande d’analyses peut être envoyée directement via l’application</li>
+                                <li>Les résultats peuvent être transmis rapidement au médecin</li>
+                                <li>Le suivi du patient devient plus fluide et plus professionnel</li>
+                            </ul>
+                            <p>Un patient bien orienté est un patient rassuré.</p>
+                            <h2  class="mt-4">Un outil pensé pour évoluer avec votre activité</h2>
+                            <p>FinPharma est conçu pour aller plus loin que la simple visibilité :</p>
+                            <ul class="mb-3">
+                                <li>Gestion des informations du cabinet ou de la clinique.</li>
+                                <li>Mise à jour des horaires et services.</li>
+                                <li>Possibilité d’évoluer vers des fonctionnalités d’administration (organisation, communication, gestion)</li>
+                            </ul>
+                            <p>FinPharma crée un <b>véritable lien digital entre médecins et laboratoires.</b></p>
+                            <h2 class="mt-4">Un gain de temps pour tous</h2>
+                            <p>Avec FinPharma :</p>
+                            <ul class="mb-3">
+                                <li>Le laboratoire optimise son organisation interne</li>
+                                <li>Le médecin reçoit les résultats plus rapidement</li>
+                                <li>Le patient bénéficie d’un parcours de soins plus clair et rassurant</li>
+                            </ul>
+                            <h2 class="mt-4">FinPharma, bien plus qu’un annuaire</h2>
+                            <p>FinPharma n’est pas seulement une plateforme d’affichage. <br> C’est un outil pensé pour :</p>
+                            <ul class="mb-3">
+                                <li>Faciliter la communication médicale</li>
+                                <li>Améliorer la coordination entre acteurs de santé</li>
+                                <li>Accompagner la transformation digitale des laboratoires au Maroc</li>
+                            </ul>
+                            <h2 class="mt-4">Rejoignez FinPharma dès aujourd’hui</h2>
+                            <p>Simplifiez les échanges.<br> Améliorez la visibilité.<br> Renforcez la confiance. <br> <b>FinPharma – La plateforme qui connecte médecins et laboratoires.</b></p>
+						</div>
+						<!-- /post -->
+					</div>
+					<!-- /single-post -->
+                </div>
+            </div>
+    </div>
+{% endblock %}

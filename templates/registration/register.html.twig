@@ -1,0 +1,54 @@
+{% extends 'base.html.twig' %}
+
+{% trans_default_domain 'website' %}
+{% block body %}
+<div class="bg_color_2">
+	<div class="container margin_60_35">
+		<div id="register">
+			<h1>{{ 'registration.title' | trans }}</h1>
+			<div class="row justify-content-center">
+				<div class="col-md-5">
+					{{ form_start(registrationForm) }}
+						<div class="box_form">
+							{{ form_row(registrationForm.firstName) }}
+							{{ form_row(registrationForm.lastName) }}
+							{{ form_row(registrationForm.email) }}
+							{{ form_row(registrationForm.phone) }}
+							{{ form_row(registrationForm.plainPassword.first) }}
+							{{ form_row(registrationForm.plainPassword.second) }}
+							<div id="pass-info" class="clearfix"></div>
+							<div class="checkbox-holder text-left">
+								<div class="checkbox_2">
+									{{ form_widget(registrationForm.terms) }}
+								</div>
+							</div>
+							<p class="text-left">{{ 'registration.required_field_notice' | trans | raw }}</p>
+							<div class="form-group text-center add_top_30">
+								<input class="btn_1" type="submit" value="{{ 'registration.submit' | trans }}">
+							</div>
+						</div>
+					{{ form_end(registrationForm) }}
+				</div>
+			</div>
+			<!-- /row -->
+		</div>
+		<!-- /register -->
+	</div>
+</div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+        function triggerBusiness(type) {
+            document.forms.registration_form.submit();
+        }
+        $(document).ready(function() {
+            window.intlTelInput(document.querySelector("#registration_form_phone_phone"), {
+                initialCountry: "ma",
+  				separateDialCode: true,
+				hiddenInput: () => ({ phone: "registration_form[phone][full_phone]", country: "registration_form[phone][country_code]" }),
+                loadUtils: () => import("https://cdn.jsdelivr.net/npm/intl-tel-input@25.14.1/build/js/utils.js"),
+            }); 
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,109 @@
+security:
+    password_hashers:
+        App\Entity\User:
+            algorithm: auto
+        App\Security\SwaggerUser:
+            algorithm: auto   # <-- ADD THIS
+
+    role_hierarchy:
+        ROLE_SUPER_ADMIN:       ROLE_ADMIN
+        ROLE_ADMIN: [ROLE_MANAGER, ROLE_DOCTOR, ROLE_USER]
+
+    providers:
+        # swagger_provider:
+        #     memory:
+        #         users: 
+        #             rachid: { password: '$2y$13$Xpg24EakqM/HxWCr6hmbZO1Tk0OrnUECwBVhMCoxpCnaDO95aivS6', roles: ['ROLE_SWAGGER']}
+
+        app_user_provider:
+            entity:
+                class: App\Entity\User
+                property: email
+        swagger_user_provider:
+            id: App\Security\SwaggerUserProvider
+        oauth_user_provider:
+            id: hwi_oauth.user.provider.entity
+
+    firewalls:
+        dev:
+            pattern: ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        swagger:
+            pattern: ^/api/docs
+            http_basic:
+                realm: 'Swagger Docs'
+            provider: swagger_user_provider
+            stateless: true
+
+        api_login:
+            stateless: true
+            pattern: ^/api/auth/login
+            provider: app_user_provider
+            json_login:
+                check_path: /api/auth/login
+                username_path: email
+                password_path: password
+                success_handler: lexik_jwt_authentication.handler.authentication_success
+                failure_handler: lexik_jwt_authentication.handler.authentication_failure
+
+        api_refresh:
+            stateless: true
+            pattern: ^/api/token/refresh
+            provider: app_user_provider
+            refresh-jwt:
+                check_path: /api/token/refresh
+        
+        mobile_public_api:
+            pattern: ^/api/public/m
+            stateless: true
+            provider: app_user_provider
+            custom_authenticators:
+                - App\Security\MobileAppAuthenticator
+        
+        public_api:
+            pattern: ^/api/public
+            stateless: true
+            provider: app_user_provider
+            custom_authenticators:
+                - App\Security\PublicApiAuthenticator
+
+        api:
+            pattern: ^/api
+            provider: app_user_provider
+            stateless: true
+            jwt: ~
+
+        main:
+            pattern: ^/
+            entry_point: form_login
+            form_login:
+                login_path: app_login
+                check_path: app_login
+                enable_csrf: true
+                provider: app_user_provider
+            logout:
+                path: app_logout
+            oauth:
+                resource_owners:
+                    facebook:           "/login/check-facebook"
+                    google:             "/login/check-google"
+                    linkedin:            "/login/check-linkedin"
+                login_path:   /login
+                use_forward:  false
+                failure_path: hwi_oauth_connect_registration
+                oauth_user_provider:
+                    service: hwi_oauth.user.provider.entity
+                provider: oauth_user_provider
+
+        
+
+    access_control:
+        - { path: ^/api/auth/login, roles: PUBLIC_ACCESS }
+        - { path: ^/api/token/refresh, roles: PUBLIC_ACCESS }
+        - { path: ^/api/docs, roles: ROLE_SWAGGER }
+        - { path: ^/api/public/m, roles: ROLE_PUBLIC_API }
+        # /api/public (non-mobile) is protected by PublicApiAuthenticator / PublicApiSubscriber
+        - { path: ^/api/public, roles: ROLE_PUBLIC_API }
+        - { path: ^/api, roles: IS_AUTHENTICATED_FULLY }
+        - { path: ^/establishement, roles: IS_AUTHENTICATED_FULLY }

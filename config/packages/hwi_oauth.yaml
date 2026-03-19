@@ -1,0 +1,25 @@
+hwi_oauth:
+    # https://github.com/hwi/HWIOAuthBundle/blob/master/docs/2-configuring_resource_owners.md
+    resource_owners:
+        facebook:
+            type:                facebook
+            client_id:           '%env(FB_ID)%'
+            client_secret:       '%env(FB_SECRET)%'
+            scope:               "email public_profile"
+        google:
+            type:                google
+            client_id:           996654957195-epdqc0eifg3tonihek27malrlmo3e9ma.apps.googleusercontent.com
+            client_secret:       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
+            scope:               "email profile"
+        linkedin:
+            type:                linkedin_openid
+            client_id:           775bg8ztwl03bf
+            client_secret:       WPL_AP1.4HdzhdgKK1bIqJwp.GDSZAg==
+            scope:               "openid email profile"
+    connect:
+        account_connector: App\Security\OAuthConnector
+        registration_form: App\Form\RegistrationFormType
+        registration_form_handler: App\Security\FormHandler
+        
+
+

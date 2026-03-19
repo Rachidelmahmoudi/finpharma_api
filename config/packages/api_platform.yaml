@@ -1,0 +1,24 @@
+api_platform:
+    title: Fin Pharma APP
+    version: 1.0.0
+    # defaults:
+    #     pagination_enabled: false
+    mapping:
+        paths: ['%kernel.project_dir%/src/Entity']
+    defaults:
+        pagination_enabled: true
+        pagination_items_per_page: 30
+        cache_headers:
+            vary: ['Content-Type', 'Authorization']
+        stateless: true
+    openapi:
+        swagger_ui_extra_configuration:
+            persistAuthorization: true
+    swagger:
+        api_keys:
+            bearer:
+                name: Authorization
+                type: header
+    formats:
+        jsonld: ["application/ld+json"]
+        json: ["application/json"]

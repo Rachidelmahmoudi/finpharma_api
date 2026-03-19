@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% trans_default_domain 'website' %}
+{% block stylesheets %}
+    {{ parent() }}
+    <link href="{{ asset('css/blog.css') }}" rel="stylesheet" />
+{% endblock %}
+
+{% block body %}
+    <div id="breadcrumb">
+        <div class="container">
+            <ul>
+                <li><a href="{{ path('index') }}">{{ 'blog.home' | trans }}</a></li>
+                <li><a href="{{ path('blog') }}">{{ 'blog.blog' | trans }}</a></li>
+                {% block current_breadcrumb  %}{% endblock %}
+            </ul>
+        </div>
+    </div>
+    <!-- /breadcrumb -->
+    {% block blog_content %}
+
+    {% endblock %}
+{% endblock %}

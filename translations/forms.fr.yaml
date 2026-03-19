@@ -1,0 +1,69 @@
+global_search:
+    all: Tous
+    pharmacies: Pharmacies
+    medecins: Médecins
+    laboratories: Laboratoires
+    search_placeholder: Pharmacie, Medicament, Médecin...
+registration:
+    firstname: Prénoms
+    lastname: Nom
+    email: Addresse email
+    phone: Téléphone
+    password: Mot de passe
+    confirm_password: Confirmer le mot de passe
+    terms_and_conditions: >
+        I accept <a href="#">terms and conditions and general policy</a>
+
+phone:
+    label: Numéro de téléphone
+    placeholder: 05 22 33 44 55
+
+add_establishement:
+    types:
+        doc: Cabinet medical
+        pharmacy: Pharmacie
+        laboratory: Laboratoire
+    doc:
+        name: Nom de cabinet
+        address: Adresse
+        phone: Téléphone
+        city: Ville
+        description: Description
+        specility:  Spécialité
+        choose_your_speciality: Choisissez votre spécialité
+        phone_help: Téléphone Portable ou fixe pour contactez le cabinet
+        speciality_help: Le domaine dnt vous travaillez
+        description_help: Tout ce que vous pouvez dire plus de vous
+
+    pharmacy:
+        name: Nom de pharmacie
+        address: Addresse
+    labo:
+        select_the_analyes: Choisissez les analyses que vous offrez
+        name: Nom de laboratoire
+        address: Addresse
+        phone: Numéro de téléphone
+        description: Description
+        phone_help: Téléphone Portable ou fixe
+        analyses_help: Pour permettre aux patients de savoir ce que vous offrez
+        description_help: Tout ce que vous pouvez dire en plus de vous
+    other:
+        type: Quel est le type de votre activite ?
+        type_placeholder: Parapharmacie, Clinique, ....
+        type_help: Speccifiez le type de votre activite
+        name: Nom de votre etablissement
+        name_help: Pour que les gents puisent vous trouvez simplement
+        address: Addresse
+        address_help: Mettez l'addresse exacte de votre localisation
+        address_placeholer: Ex :Avenue al anwar, Imm Ibn sina Etage 2 № 11
+        phone: Numéro de téléphone
+        phone_help: Téléphone Portable ou fixe ou les clients peuvent vous contacter
+        description: Description de votre activite
+        description_help: Montrez en details ce que vous presenntez comme service
+
+    choose_your_type: Choisissez le type de votre activité
+    activity_informations: Informations de votre activité
+    others: Autre
+    city:
+        choose_your_city: Choisissez la ville
+    submit: Envoyer
