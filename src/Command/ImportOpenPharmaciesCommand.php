@@ -10,6 +10,7 @@ use Symfony\Component\Console\Command\Command;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Output\OutputInterface;
 use Symfony\Component\Console\Attribute\AsCommand;
+use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 
 #[AsCommand(
     name: 'app:import-open-pharmacies',
@@ -19,14 +20,14 @@ class ImportOpenPharmaciesCommand extends Command
 {
     protected static $defaultName = 'app:import-open-pharmacies';
 
-    public function __construct(private EntityManagerInterface $em)
+    public function __construct(private EntityManagerInterface $em, private readonly ParameterBagInterface $parameter_bag)
     {
         parent::__construct();
     }
 
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
-        $jsonFile = './pharmacies_complete.json';
+        $jsonFile = $this->parameter_bag->get('kernel.project_dir') . '/public/data/pharmacies_complete.json';
         $data = json_decode(file_get_contents($jsonFile), true);
 
         foreach ($data as $townData) {
