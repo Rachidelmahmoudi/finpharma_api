@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\GetCollection;
+use ApiPlatform\Metadata\QueryParameter;
 use App\Repository\MedicationRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -15,6 +16,9 @@ use Symfony\Component\Serializer\Attribute\Groups;
 #[ApiResource(
     operations: [
         new GetCollection(
+            parameters: [
+                'name' => new QueryParameter(description: 'Filter by name')
+            ],
             security: "is_granted('ROLE_PUBLIC_API')",
             uriTemplate: '/public/m/medications',
             normalizationContext: ['groups' => ['read']],
