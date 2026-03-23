@@ -116,7 +116,7 @@ class Pharmacy
     #[ORM\Column(length: 50, nullable: true)]
     private ?string $email = null;
 
-    #[ORM\Column]
+    #[ORM\Column(nullable: true)]
     private ?bool $isAlwaysOpen = null;
 
     public function __construct()
@@ -248,7 +248,7 @@ class Pharmacy
         return $this->isAlwaysOpen;
     }
 
-    public function setIsAlwaysOpen(bool $isAlwaysOpen): static
+    public function setIsAlwaysOpen(?bool $isAlwaysOpen): static
     {
         $this->isAlwaysOpen = $isAlwaysOpen;
 
