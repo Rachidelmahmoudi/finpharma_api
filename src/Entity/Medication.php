@@ -2,6 +2,8 @@
 
 namespace App\Entity;
 
+use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
+use ApiPlatform\Metadata\ApiFilter;
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\GetCollection;
 use ApiPlatform\Metadata\QueryParameter;
@@ -14,17 +16,16 @@ use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: MedicationRepository::class)]
 #[ApiResource(
+    paginationEnabled: false,
     operations: [
         new GetCollection(
-            parameters: [
-                'name' => new QueryParameter(description: 'Filter by name')
-            ],
             security: "is_granted('ROLE_PUBLIC_API')",
             uriTemplate: '/public/m/medications',
             normalizationContext: ['groups' => ['read']],
         )
     ]
 )]
+#[ApiFilter(SearchFilter::class, properties: ['name' => 'partial'])]
 class Medication
 {
     #[ORM\Id]

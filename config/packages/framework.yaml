@@ -9,7 +9,8 @@ framework:
     #fragments: true
     messenger:
         transports:
-            async: '%env(REDIS_DSN)%'
+            #async: '%env(REDIS_DSN)%'
+            async: "%env(MESSENGER_TRANSPORT_DSN)%"
         routing:
             '*': async
 
