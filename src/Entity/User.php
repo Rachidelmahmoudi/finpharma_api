@@ -4,7 +4,9 @@ namespace App\Entity;
 
 use ApiPlatform\Metadata\ApiResource;
 use ApiPlatform\Metadata\Post;
+use App\Controller\Api\RegisterController;
 use App\Controller\Api\SocialAuthController;
+use App\Dto\RegisterUser;
 use App\Dto\SocialProfile;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
@@ -24,6 +26,13 @@ use Symfony\Component\Security\Core\User\UserInterface;
             controller: SocialAuthController::class,
             denormalizationContext: ['groups' => ['create']],
             input: SocialProfile::class
+        ),
+        new Post(
+            security: "is_granted('ROLE_PUBLIC_API')",
+            uriTemplate: '/public/m/auth/register',
+            input: RegisterUser::class,
+            denormalizationContext: ['groups' => ['signup']],
+            controller: RegisterController::class,
         )
     ]
 )]

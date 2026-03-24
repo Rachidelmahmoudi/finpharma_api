@@ -7,20 +7,11 @@
         "dutyType": "gardeJour",
         "neighborhoods": [
           {
-            "dutyType": "garde-jour",
-            "pharmacies": [
-              {
-                "pharmacy": "Pharmacie Palmeraie Elbahja",
-                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
-              }
-            ]
-          },
-          {
             "quartier": "Quartier: AÏn Itti",
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Dar Tounsi",
+                "pharmacy": "Pharmacie El Imame Ali",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -30,19 +21,15 @@
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Masjid Daoudiate",
+                "pharmacy": "Pharmacie Bennouna",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
-                "pharmacy": "Pharmacie Al Ihssane",
+                "pharmacy": "Pharmacie Dubai",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
-                "pharmacy": "Pharmacie Al Boustane",
-                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
-              },
-              {
-                "pharmacy": "Pharmacie Les Narcisses",
+                "pharmacy": "Pharmacie Sidi Ouaggag",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -52,11 +39,7 @@
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Moukawama",
-                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
-              },
-              {
-                "pharmacy": "Pharmacie Bab Jdid",
+                "pharmacy": "Pharmacie Sana",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
@@ -64,7 +47,11 @@
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
-                "pharmacy": "Pharmacie Les Cypres",
+                "pharmacy": "Pharmacie L 039 Hivernage",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Les Jardins De La Menara",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -74,7 +61,7 @@
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Centrale AlIzdihar",
+                "pharmacy": "Pharmacie Benzouine",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -84,15 +71,11 @@
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Yassine",
+                "pharmacy": "Pharmacie Targa Place",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
-                "pharmacy": "Pharmacie Salaheddine El Ayoubi",
-                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
-              },
-              {
-                "pharmacy": "Pharmacie Abwab AlKhair",
+                "pharmacy": "Pharmacie AlWafa",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
@@ -100,7 +83,7 @@
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
-                "pharmacy": "Pharmacie AlKhabir",
+                "pharmacy": "Pharmacie Ennour",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -110,19 +93,19 @@
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Ibn Sina Ex Noun Oualkalam",
+                "pharmacy": "Pharmacie Jnane Slimane",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
-                "pharmacy": "Pharmacie Principale Chrifia",
+                "pharmacy": "Pharmacie les Résidences Nouha",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
-                "pharmacy": "Pharmacie Ibn Zohr",
+                "pharmacy": "Pharmacie Addaoui",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
-                "pharmacy": "Pharmacie Zaparojie",
+                "pharmacy": "Grande Pharmacie M 039 Hamid",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -132,11 +115,11 @@
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie de la Place",
+                "pharmacy": "Pharmacie Boussekri",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
-                "pharmacy": "Pharmacie de Marrakech",
+                "pharmacy": "Pharmacie Mouassine",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -146,7 +129,7 @@
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Chams Nakhil",
+                "pharmacy": "Pharmacie Tallaght",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -156,11 +139,11 @@
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Ayour Ex Azzouzia",
+                "pharmacy": "Pharmacie Marche De Gros",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               },
               {
-                "pharmacy": "Pharmacie Hay Sinai",
+                "pharmacy": "Pharmacie La Vida Ex Souk Laouad",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -170,7 +153,7 @@
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Jardins D 039 Agdal",
+                "pharmacy": "Pharmacie Baghdad",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -180,7 +163,7 @@
             "dutyType": "garde-jour",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Sofia",
+                "pharmacy": "Pharmacie Salam",
                 "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
               }
             ]
@@ -191,12 +174,11 @@
         "dutyType": "gardeNuit",
         "neighborhoods": [
           {
-            "quartier": "Quartier: Ain Itti",
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Fekhara",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Al Kawtar",
+                "garde_status": "Ouvert en ce moment"
               }
             ]
           },
@@ -205,12 +187,12 @@
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Dubai",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Maniss",
+                "garde_status": "Ouvert en ce moment"
               },
               {
-                "pharmacy": "Pharmacie Sidi Ouaggag",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Salle Couverte",
+                "garde_status": "Ouvert en ce moment"
               }
             ]
           },
@@ -219,22 +201,22 @@
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Palacio",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Elhara",
+                "garde_status": "Ouvert en ce moment"
               },
               {
-                "pharmacy": "Pharmacie AlAtlas",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Du Consulat",
+                "garde_status": "Ouvert en ce moment"
               }
             ]
           },
           {
-            "quartier": "Quartier: Hay Al Izdihar",
+            "quartier": "Quartier: Hay Dar  Esaada",
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Route De Safi",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Asafar",
+                "garde_status": "Ouvert en ce moment"
               }
             ]
           },
@@ -243,12 +225,12 @@
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Azli",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Chifaa",
+                "garde_status": "Ouvert en ce moment"
               },
               {
-                "pharmacy": "Pharmacie Hay ElHassani",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Adoha",
+                "garde_status": "Ouvert en ce moment"
               }
             ]
           },
@@ -257,8 +239,8 @@
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie LaÂrif",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Arraha Chkili",
+                "garde_status": "Ouvert en ce moment"
               }
             ]
           },
@@ -267,8 +249,8 @@
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Riad LaÂrouss",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Sidi Belabbès",
+                "garde_status": "Ouvert en ce moment"
               }
             ]
           },
@@ -277,8 +259,8 @@
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Lakhili",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Al Amana",
+                "garde_status": "Ouvert en ce moment"
               }
             ]
           },
@@ -287,8 +269,8 @@
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Bassatine Targa",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Rayyane",
+                "garde_status": "Ouvert en ce moment"
               }
             ]
           },
@@ -297,8 +279,8 @@
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Bastoun",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie de la Palestine",
+                "garde_status": "Ouvert en ce moment"
               }
             ]
           },
@@ -307,8 +289,2812 @@
             "dutyType": "garde-nuit",
             "pharmacies": [
               {
-                "pharmacy": "Pharmacie Salam",
-                "garde_status": "Garde Nuit (Ouvert de 20h à 9h)"
+                "pharmacy": "Pharmacie Les Orangers",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Casablanca",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-casablanca.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "quartier": "Quartier: Ain Chock",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie ElKheir",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Dalanda",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Soulaima",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Ain Sebaa",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie AlHadika",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie de la Plage",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Alazhar Panorama",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Essadik",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Anassi",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie La Porte D 039 Anassi",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Belvédère Et Roches Noires",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie des Amis",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Ben M'sik",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Essalama",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: El Fida Et Mers Sultan",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie ElAnouar",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie De L 039 Union",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie le Galien",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Hassani Et El Oulfa",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Rosée de La Corniche",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Lixus",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Milad",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Saïb",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Mohammadi",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Boualam",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie la Grande Ceinture",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Résidence ElMouahidine",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie ElFarissi",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Choura Al Assil",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie kissariat Hay Mohammadi",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Senhaja Health",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Lissasfa",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie du Quartier industriel",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Merini",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sbata",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Afriquia",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Bernoussi",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Nouassi",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Fatihat Elkheir",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Maârouf",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Yathrib",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Maarouf",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Camya",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Moumen",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie AlKaria",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Dennay",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Ville Et Bourgogne Et Maarif",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie le Corail",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Hatim",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Najd",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Mérieux",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Kandara",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "quartier": "Quartier: Ain Chock",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Soulaima",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Ain Sebaa",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie de la Plage",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Belvédère Et Roches Noires",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie des Amis",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: El Fida Et Mers Sultan",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie De L 039 Union",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Hassani Et El Oulfa",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Rosée de La Corniche",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Milad",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Lissasfa",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Merini",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie du Quartier industriel",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sbata",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Afriquia",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Bernoussi",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Fatihat Elkheir",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Maarouf",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Camya",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Sidi Moumen",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Dennay",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Ville Et Bourgogne Et Maarif",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Kandara",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Najd",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Fes",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-fes.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie La Croix Verte",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Espace Vert",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Le Remède",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Derb Lamty",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Bel Air",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Assafwa",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie La Croix Verte",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Espace Vert",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Le Remède",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Derb Lamty",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Bel Air",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Assafwa",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Agadir",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-agadir.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "quartier": "Quartier: Adrar Tilila",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Jnane Adrar",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Agadir",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Grande Pharmacie D'agadir",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Al Massira Et Dakhla",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Mekka",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Bensergao",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Jet Sakane",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Anouar",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Cite Dakhla",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Rachid",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Mohammadi",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Zineb",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Lakhyam Erac Bouargane",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Conseil",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Les Amicales Ihchech",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Hanaa",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Salam Houda Bensergao",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Tikida",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "quartier": "Quartier: Adrar Tilila",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Jnane Adrar",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Agadir",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Grande Pharmacie D'agadir",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Al Massira Et Dakhla",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Mekka",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Bensergao",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Jet Sakane",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Anouar",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Cite Dakhla",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Rachid",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Mohammadi",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Zineb",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Lakhyam Erac Bouargane",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Conseil",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Les Amicales Ihchech",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Hanaa",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Salam Houda Bensergao",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Tikida",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sefrou",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-sefrou.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Slaoui Al Jadida",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Zalagh",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Setti Massaouda",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Hay Sidi Boumediane",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Principale Ain Cheggag",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Cascades",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Zalagh",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Sidi Ahmed Tadli",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Khalil",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Route de Boulmane",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Rabat",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-rabat.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "quartier": "Quartier: Agdal",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Les Ministeres D 039 Agdal",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Akkari Ocean Orangers",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Napoli",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Centre Ville",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Du Théâtre",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Riad",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Safiya",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Takadoum Et Souissi",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie El Joulane",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Yacoub El Mansour",
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Assabah",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie El Kouass",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie L 039 Avenir",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "quartier": "Quartier: Agdal",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Les Ministeres D 039 Agdal",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Akkari Ocean Orangers",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Napoli",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Hay Riad",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Safiya",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Takadoum Et Souissi",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie El Joulane",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          },
+          {
+            "quartier": "Quartier: Yacoub El Mansour",
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie El Kouass",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tanger",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-tanger.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Grande Pharmacie Rif",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Yasmine",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Zouitina",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Moujahidine",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Ibn Al Arabi",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie La Wilaya",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Riad Achifaa",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Oudaya",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Grande Pharmacie Rif",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Yasmine",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Zouitina",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Moujahidine",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Ibn Al Arabi",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie La Wilaya",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Riad Achifaa",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Oudaya",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sale",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-sale.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Omrane",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Atrassi",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Loubna",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Taiba",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie du Bouregreg",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Argana",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie De L 039 Aube",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Atrassi",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Loubna",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Taiba",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Argana",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Beni Mellal",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-beni-mellal.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Raed",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "La Grande Pharmacie",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Bismi Allah",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Ennajat",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Pasteur",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Raed",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Bismi Allah",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "La Grande Pharmacie",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie ElMsalla",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Ibn Rochd",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Khouribga",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-khouribga.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Yasmina",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Ryad",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie AlMasjid",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Atraoui",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Wariri",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Al Manal",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Oujda",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-oujda.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie AlJazira",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Nour Marjane Moussaoui",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Stade D 039 Honneur",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Berrichi",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie La Polyclinique",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Berrichi",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie La Polyclinique",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Stade D 039 Honneur",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Nour Marjane Moussaoui",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie AlJazira",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Errachidia",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-errachidia.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Messaoudia",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Hopital",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Hay Riad",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Populaire",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Ibn Sina",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Nador",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-nador.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie AlMahatta",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie De L 039 Hopital",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie ElOum",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie AlMasjid",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie AlMahatta",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie De L 039 Hopital",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie ElOum",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie AlMasjid",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Temara",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-temara.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Rim",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Ihssan",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Principale",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Annassiha",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Ihssan",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Principale",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ben Guerir",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-ben-guerir.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Hay Takadoum",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Nakhil B.j",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Zarhoun",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Hay Ennour",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Inezgane",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-inezgane.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Jamal",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Ibn Sina ( Avicenne )",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Taj",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie L'unité",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Guelmim",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-guelmim.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Mssalla",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Gharnata",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Azhar",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Dakhla Hay Miri",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Mohammedia",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-mohammedia.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Nasr",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Malak",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Mesbahiate",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie De La Piscine",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Nasr",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Malak",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Mesbahiate",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie De La Piscine",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Berrechid",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-berrechid.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": []
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": []
+      }
+    ]
+  },
+  {
+    "name": "Tiznit",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-tiznit.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Bel Haj",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Narjou Chifaa",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Route Goulmim",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Laayoune",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-laayoune.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Aicha",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Masjid",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie 84",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Aicha",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Masjid",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie 84",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ouarzazate",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-ouarzazate.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Ibn Al Atik",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Ait Kdif",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Dadouch",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ait Melloul",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-ait-melloul.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie De L'atlas",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Hayat",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Baghdad",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Taza",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-taza.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Malha",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie AlMassira",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Malha",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie AlMassira",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Chefchaouen",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-chefchaouen.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie AlAndalous",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Utaa Hammam",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Biougra",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-biougra.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie El Qods",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Rebbouh",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie El Qods",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Rebbouh",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Benslimane",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-benslimane.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie hay Karim",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Mosquée ElFath",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie hay Karim",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Mosquée ElFath",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Khemisset",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-khemisset.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Limoges",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Outtaj",
+                "garde_status": "Ouvert en ce moment"
+              },
+              {
+                "pharmacy": "Pharmacie Limoges",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Kenitra",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-kenitra.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Siham",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Assam Omar",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Siham",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Assam Omar",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Berkane",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-berkane.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie les Orangers",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Andalous",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie les Orangers",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Andalous",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Zagora",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-zagora.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie ElBaraka",
+                "garde_status": "Garde Jour (Ouvert entre 9h et 23h)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Firdaous",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Khénifra",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-khenifra.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Massira Soufla",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Boufloucen",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Massira Soufla",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Boufloucen",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tinghir",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-tinghir.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Zaid Ouhmad",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie El Qotb",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Zaid Ouhmad",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie El Qotb",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Selouane",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-selouane.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Principale",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Omrane",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Principale",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Omrane",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Guercif",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-guercif.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Allal Ben Abdellah",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Firdaous",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Allal Ben Abdellah",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              },
+              {
+                "pharmacy": "Pharmacie Al Firdaous",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "El Kelaa Des Sraghna",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-el-kelaa-des-sraghna.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Louhmadi",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Louhmadi",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tahla",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-tahla.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Akhawayne",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Akhawayne",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sidi Kacem",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-sidi-kacem.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie A 039 Ryad",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie A 039 Ryad",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ouazzane",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-ouazzane.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Bouhlal",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Bouhlal",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Azrou",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-azrou.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Masjid Essaada",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Masjid Essaada",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Larache",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-larache.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie des Cliniques",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie des Cliniques",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Zghanghan",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-zghanghan.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Chaabia",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Chaabia",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Al Arrui",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-al-arrui.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Zaidi",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Zaidi",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tiflet",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-tiflet.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": []
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Khalil",
+                "garde_status": "Ouvert en ce moment"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Taourirt",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-taourirt.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Amal",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Amal",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "El Harhoura",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-el-harhoura.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Principale Ex Guyville",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Principale Ex Guyville",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sidi Slimane",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-sidi-slimane.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Sidi Slimane",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Sidi Slimane",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Sidi Bennour",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-sidi-bennour.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie la victoire",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie la victoire",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Oued Zem",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-oued-zem.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Wahda",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Wahda",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Dcheira",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-dcheira.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Imane",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Imane",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Al Hoceima",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-al-hoceima.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Khair",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Khair",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Ksar El Kebir",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-ksar-el-kebir.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Yaqtine",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Al Yaqtine",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "Tikiouine",
+    "url": "https://annuaire-gratuit.ma/pharmacie-garde-tikiouine.html",
+    "neighborhoods": [
+      {
+        "dutyType": "gardeJour",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-jour",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Hiba",
+                "garde_status": "Ouvert toute la journée (24 heures)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "dutyType": "gardeNuit",
+        "neighborhoods": [
+          {
+            "dutyType": "garde-nuit",
+            "pharmacies": [
+              {
+                "pharmacy": "Pharmacie Hiba",
+                "garde_status": "Ouvert toute la journée (24 heures)"
               }
             ]
           }

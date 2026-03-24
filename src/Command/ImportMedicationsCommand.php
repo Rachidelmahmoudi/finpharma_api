@@ -30,7 +30,7 @@ class ImportMedicationsCommand extends Command
     protected function execute(InputInterface $input, OutputInterface $output): int
     {
         $path = $this->parameter_bag->get('kernel.project_dir') . '/public/data/medications/';
-        for ($i = ord('F'); $i <= ord('Z'); $i++) {
+        for ($i = ord('A'); $i <= ord('Z'); $i++) {
             $letter = chr($i);
             $data = file_get_contents($path . 'medications_' . $letter . '.json');
             $medications = json_decode($data, true);
