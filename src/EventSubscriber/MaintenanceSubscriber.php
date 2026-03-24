@@ -21,7 +21,7 @@ class MaintenanceSubscriber implements EventSubscriberInterface
         $path = $request->getPathInfo();
 
         // ✅ Autoriser API Platform
-        if (str_starts_with($path, '/api') || str_contains($path, 'privacy') || str_starts_with($path, '/read')) {
+        if (str_starts_with($path, '/api') || str_contains($path, 'privacy')) {
             return;
         }
 

@@ -5,9 +5,3 @@ new_pharmacy:
   explanation: After creating your password you can access your pharmacy space to handle it.
   footer: <tr><td class="content-block"><span class="apple-link">FINPHARMA, Marrakech Amizmiz</span></td></tr><tr><td class="content-block powered-by">Powered by <a href="#">LATINOUR</a></td></tr>
   placeholder: This is an email from finpharma.
-
-registration:
-  subject: Bienvenue sur FinPharma
-  message: Votre application pour trouver tous les établissement de sante proche de vous
-  open_app: Ouvrir l'applications
-

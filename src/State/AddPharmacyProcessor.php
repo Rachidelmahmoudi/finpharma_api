@@ -38,7 +38,6 @@ class AddPharmacyProcessor implements ProcessorInterface
 
         /** @var User|null $currentUser */
         $currentUser = $this->security->getUser();
-        $currentUser->setRoles([USER::ROLE_PHARMACY_ADMIN, User::ROLE_USER]);
 
         if ($operation instanceof Put) {
             if (!$currentUser instanceof User) {
@@ -58,16 +57,30 @@ class AddPharmacyProcessor implements ProcessorInterface
             if (!$pharmacy instanceof Pharmacy) {
                 throw new \RuntimeException('Pharmacy not found');
             }
+
+            $user = $currentUser;
         } else {
             // POST: create pharmacy + invited admin user + establishment link
             $pharmacy = new Pharmacy();
             $this->entity_manager->persist($pharmacy);
             $this->entity_manager->flush(); // ensure ULID is generated before linking establishment
 
+            $user = new User();
+            $user->setEmail($dtoData->email)
+                ->setRoles([User::ROLE_USER, User::ROLE_PHARMACY_ADMIN])
+                ->setFirstName('Pharmacy admin')
+                ->setLastName('Pharmacy admin')
+                ->setIsVerified(false);
+
+            $randomPassword = bin2hex(random_bytes(32));
+            $user->setPassword($this->passwordHasher->hashPassword($user, $randomPassword));
+
+            $this->entity_manager->persist($user);
+
             $est = new Establishment();
             $est->setType(EstablishmentType::PHARMACY)
                 ->setTarget($pharmacy->getId());
-            $est->addHandler($currentUser);
+            $est->addHandler($user);
             $this->entity_manager->persist($est);
         }
 
@@ -79,7 +92,7 @@ class AddPharmacyProcessor implements ProcessorInterface
             ->setLongitude($dtoData->longitude)
             ->setPhone($dtoData->phone)
             ->setTown($dtoData->town ?? $dtoData->customTown)
-            // ->setEmail($dtoData->email)
+            ->setEmail($dtoData->email)
             ->setIsAlwaysOpen($dtoData->isAlwaysOpen);
         
         if (!$dtoData->isAlwaysOpen) {
@@ -89,7 +102,7 @@ class AddPharmacyProcessor implements ProcessorInterface
         $this->entity_manager->flush();
 
         if ($operation instanceof Post) {
-            $this->pharmacy_password_link->sendLink($currentUser, $dtoData->lang);
+            $this->pharmacy_password_link->sendLink($user, $dtoData->lang);
         }
 
         return $pharmacy;

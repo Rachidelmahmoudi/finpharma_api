@@ -100,7 +100,6 @@ security:
 
     access_control:
         - { path: ^/api/auth/login, roles: PUBLIC_ACCESS }
-        - { path: ^/api/auth/register, roles: PUBLIC_ACCESS }
         - { path: ^/api/token/refresh, roles: PUBLIC_ACCESS }
         - { path: ^/api/docs, roles: ROLE_SWAGGER }
         - { path: ^/api/public/m, roles: ROLE_PUBLIC_API }

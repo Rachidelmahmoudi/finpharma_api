@@ -2,27 +2,12 @@
 
 namespace App\Entity;
 
-use ApiPlatform\Doctrine\Orm\Filter\SearchFilter;
-use ApiPlatform\Metadata\ApiFilter;
-use ApiPlatform\Metadata\ApiResource;
-use ApiPlatform\Metadata\GetCollection;
 use App\Repository\AnalysesRepository;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
-use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: AnalysesRepository::class)]
-#[ApiResource(
-    operations: [
-        new GetCollection(
-            security: "is_granted('ROLE_PUBLIC_API')",
-            uriTemplate: '/public/m/analyses',
-            normalizationContext: ['groups' => ['read']],
-        )
-    ]
-)]
-#[ApiFilter(SearchFilter::class, properties: ['name' => 'partial'])]
 class Analyses
 {
     #[ORM\Id]
@@ -31,11 +16,9 @@ class Analyses
     private ?int $id = null;
 
     #[ORM\Column(length: 255)]
-    #[Groups(['read'])]
     private ?string $name = null;
 
     #[ORM\Column(nullable: true)]
-    #[Groups(['read'])]
     private ?float $price = null;
 
     #[ORM\ManyToOne(inversedBy: 'analyses')]
