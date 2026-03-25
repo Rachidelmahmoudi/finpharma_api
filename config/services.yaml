@@ -43,8 +43,8 @@ services:
         arguments:
             $appSecret: '%env(MOBILE_APP_SECRET)%'
             $allowedBundleIds:
-                - 'ma.finpharma.com'  # iOS
-                - 'ma.finpharma.com'  # Android
+                - 'latinour.finpharma.com'  # iOS
+                - 'latinour.finpharma.com'  # Android
 
     App\Security\InternalRequestAuthenticator:
         arguments:

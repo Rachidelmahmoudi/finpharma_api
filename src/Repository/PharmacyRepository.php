@@ -43,11 +43,16 @@ class PharmacyRepository extends ServiceEntityRepository implements Searchable
     public function findPharmacies(int $page = 1, int $itemsPerPage = 5, array $filter): DoctrinePaginator
     {
         $qb =  $this->createQueryBuilder('p')
-        ->innerJoin('p.openingHours', 'oh')
-        ->andWhere('oh.day = :today AND (oh.amFrom <= :now AND oh.amTo >= :now OR oh.pmFrom <= :now AND oh.pmTo >= :now)')
-        ->orWhere('p.isAlwaysOpen = true OR oh.source = :source AND oh.day >= :today')
+        ->leftJoin('p.openingHours', 'oh')
+        ->andWhere('oh.source = :source AND oh.day = :today AND ((oh.amFrom <= :now AND oh.amTo >= :now) OR (oh.pmFrom <= :now AND oh.pmTo >= :now))')
+        ->orWhere('p.isAlwaysOpen = true')
+        ->orWhere('(HOUR(CURRENT_TIME()) BETWEEN :startMorning AND :endMorning) OR (HOUR(CURRENT_TIME()) BETWEEN :startAfternoon AND :endAfternoon)')
         ->setParameter('today', date('Y-m-d'))
         ->setParameter('source', 'scraper')
+        ->setParameter('startMorning', 9)
+        ->setParameter('endMorning', 12)
+        ->setParameter('startAfternoon', 15)
+        ->setParameter('endAfternoon', 21)
         ->setParameter('now', new \DateTime());
 
         if (!empty($filter['city'])) {
