@@ -58,6 +58,8 @@ doctrine:
                 # ST_SetSRID: LongitudeOne\Spatial\ORM\Query\AST\Functions\PostgreSql\STSetSRID
                 # ST_DWithin: LongitudeOne\Spatial\ORM\Query\AST\Functions\PostgreSql\STDWithin
                 # ST_DistanceSphere: CrEOF\Spatial\ORM\Query\AST\Functions\AbstractSpatialDQLFunction\STDistanceSphere
+            datetime_functions:
+                HOUR: DoctrineExtensions\Query\Mysql\Hour
 
 when@test:
     doctrine:
