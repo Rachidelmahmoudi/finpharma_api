@@ -16,7 +16,6 @@ use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: MedicationRepository::class)]
 #[ApiResource(
-    paginationEnabled: false,
     operations: [
         new GetCollection(
             security: "is_granted('ROLE_PUBLIC_API')",

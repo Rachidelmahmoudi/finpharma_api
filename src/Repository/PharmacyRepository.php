@@ -61,7 +61,7 @@ class PharmacyRepository extends ServiceEntityRepository implements Searchable
         }
 
         if (!empty($filter['town'])) {
-            $qb->andWhere('LOWER(p.town) = :town OR LOWER(oh.town) = :town')
+            $qb->andWhere('LOWER(p.address) like :town OR LOWER(oh.town) = :town')
                ->setParameter('town', strtolower($filter['town']));
         }
 

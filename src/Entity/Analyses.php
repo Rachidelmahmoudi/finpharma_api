@@ -14,6 +14,7 @@ use Symfony\Component\Serializer\Attribute\Groups;
 
 #[ORM\Entity(repositoryClass: AnalysesRepository::class)]
 #[ApiResource(
+    paginationEnabled: false,
     operations: [
         new GetCollection(
             security: "is_granted('ROLE_PUBLIC_API')",
