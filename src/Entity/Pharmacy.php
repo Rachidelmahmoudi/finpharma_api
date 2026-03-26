@@ -44,16 +44,15 @@ use App\State\MyPharmacyProvider;
             uriTemplate: '/my-pharmacy',
             provider: MyPharmacyProvider::class,
         ),
-        new Put(
-            security: "is_granted('ROLE_PHARMACY_ADMIN')",
+        new Post(
+            security: "is_granted('ROLE_USER')",
             uriTemplate: '/my-pharmacy',
             processor: AddPharmacyProcessor::class,
-            normalizationContext: ['groups' => ['create']],
+            denormalizationContext: ['groups' => ['create']],
             input: CreatePharmacy::class
         ),
-        new Post(
-            security: "is_granted('ROLE_PUBLIC_API')",
-            uriTemplate: '/public/m/add-pharmacy',
+        new Put(
+            security: "is_granted('ROLE_USER')",
             processor: AddPharmacyProcessor::class,
             denormalizationContext: ['groups' => ['create']],
             input: CreatePharmacy::class

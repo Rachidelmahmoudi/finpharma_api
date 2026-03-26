@@ -5,8 +5,13 @@ new_pharmacy:
   explanation: <p>After creating your password you can access your pharmacy space to handle it.</p>
   footer: <tr><td class="content-block"><span class="apple-link">FINPHARMA, Marrakech Amizmiz</span></td></tr><tr><td class="content-block powered-by">Powered by <a href="#">LATINOUR</a></td></tr>
   placeholder: This is an email from finpharma.
+  hi: Bonjour, <br> Bienvenue sur FinPharma 👋
+  text_welcome: Votre espace pharmacien est désormais actif. Vous pouvez dès maintenant gérer facilement les informations et horaires de votre pharmacie, et améliorer sa visibilité auprès des patients. <br>D’autres fonctionnalités seront bientôt disponibles pour vous accompagner davantage. <br>Nous sommes ravis de vous compter parmi nous.
 
 registration:
   subject: Bienvenue sur FinPharma
   message: Votre application pour trouver tous les établissement de sante proche de vous
   open_app: Ouvrir l'application
+  email_used: Cet email est deja utilisé
+  hi: Bonjour, <br> Bienvenue sur FinPharma 👋
+  text_welcome: <b>Votre plateforme santé vous permet de</b> :<ul> <li>Trouver rapidement les établissements de santé proches de vous </li><li>Profiter de votre pharmacien IA pour vous accompagner </li><li>Gérer les horaires de votre pharmacie (si vous êtes pharmacien)</li><li>Améliorer la visibilité de votre établissement</li></ul>Nous sommes ravis de vous compter parmi nous !

@@ -5,7 +5,6 @@ namespace App\Service;
 use App\DBAL\EstablishmentType;
 use App\Entity\Establishment;
 use App\Entity\User;
-use App\Repository\EstablishmentRepository;
 use App\Repository\PharmacyRepository;
 
 class EstablishmentService {
@@ -18,9 +17,13 @@ class EstablishmentService {
     {
        switch ($type) {
             case EstablishmentType::PHARMACY:
-                $pharmacy_id = $user->getEstablishments()->filter(function (Establishment $est) {
+                $userPharmacies = $user->getEstablishments()->filter(function (Establishment $est) {
                     return $est->getType() === EstablishmentType::PHARMACY;
-                })->first()?->getTarget() ?? null;
+                });
+                if ($userPharmacies->count() === 0) {
+                    return null;
+                }
+                $pharmacy_id = $userPharmacies->first()?->getTarget() ?? null;
                 if (!$pharmacy_id) {
                     return null;
                 }

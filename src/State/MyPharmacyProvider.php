@@ -33,7 +33,7 @@ class MyPharmacyProvider implements ProviderInterface
         if (!$user) {
             return null;
         }
-        
+
         return $this->establishment_service->getEstablishmentsByUser($user, EstablishmentType::PHARMACY);
     }
 }

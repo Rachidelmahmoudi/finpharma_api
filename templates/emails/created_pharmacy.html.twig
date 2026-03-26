@@ -2,22 +2,34 @@
 {% trans_default_domain 'emails' %}
 
 {% block content %}
-{% trans into lang %}new_pharmacy.welcome{% endtrans %}
+
 <table role="presentation" border="0" cellpadding="0" cellspacing="0" class="btn btn-primary">
 <tbody>
     <tr>
-    <td align="left">
+    <td  align="left">
+    {{ 'nwe_pharmacy.hi' | trans | raw }}
+    </td>
+    </tr>
+    <tr>
+    <td align="center">
         <table role="presentation" border="0" cellpadding="0" cellspacing="0">
         <tbody>
             <tr>
-            <td> <a href="{{link}}" target="_blank">{% trans into lang %}new_pharmacy.create_your_password{% endtrans %}</a> </td>
+                <td> 
+                <a href="https://finpharma.ma/share" >{{ 'nwe_pharmacy.open_app' | trans }}</a>
+                </td>
             </tr>
         </tbody>
         </table>
     </td>
     </tr>
+    <tr>
+     <td align="left">
+     {{ 'nwe_pharmacy.text_welcome' | trans | raw }}
+      </td>
+    </tr>
 </tbody>
 </table>
-{% trans into lang %}new_pharmacy.welcome{% endtrans %}
+
 
 {% endblock %}
