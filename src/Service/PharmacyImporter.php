@@ -72,12 +72,7 @@ class PharmacyImporter
 
     private function createOrUpdatePharmacy(array $item): void
     {
-        $pharmacy = $this->em->getRepository(Pharmacy::class)
-            ->findOneBy(['reference' => $item['reference'] ?? null]);
-
-        if (!$pharmacy) {
-            $pharmacy = new Pharmacy();
-        }
+        $pharmacy = new Pharmacy();
 
         $pharmacy->setName($item['name'] ?? null);
         $pharmacy->setAddress($item['address'] ?? null);
