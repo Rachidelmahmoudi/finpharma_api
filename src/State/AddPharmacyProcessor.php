@@ -46,11 +46,14 @@ class AddPharmacyProcessor implements ProcessorInterface
             $ests = $currentUser->getEstablishments()->filter(fn (Establishment $est) => $est->getType() === EstablishmentType::PHARMACY);
             $est = $ests->first();
             $pharmacyId = $est->getTarget();
-            if (is_string($pharmacyId)) {
+            if (!empty($pharmacyId)) {
                 if ($operation instanceof Put && $uriVariables['id'] !== $pharmacyId) {
                     throw new AccessDeniedHttpException('Inavlid pharmacy');
                 }
                 $pharmacy = $this->entity_manager->getRepository(Pharmacy::class)->find($pharmacyId);
+                if (!$pharmacy) {
+                    throw new AccessDeniedHttpException('Inavlid pharmacy');
+                }
             }
             $pharmacy = $this->createPharmacy($pharmacy, $dtoData);
         } else {
