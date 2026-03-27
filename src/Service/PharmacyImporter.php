@@ -79,13 +79,13 @@ class PharmacyImporter
             $pharmacy = new Pharmacy();
         }
 
-        $pharmacy->setName($item['nom'] ?? null);
-        $pharmacy->setAddress($item['adresse'] ?? null);
-        $pharmacy->setPhone($item['telephone'] ?? null);
-        $pharmacy->setCity($item['ville'] ?? null);
+        $pharmacy->setName($item['name'] ?? null);
+        $pharmacy->setAddress($item['address'] ?? null);
+        $pharmacy->setPhone($item['phone'] ?? null);
+        $pharmacy->setCity($item['city'] ?? null);
         $pharmacy->setReference($item['reference'] ?? null);
         $pharmacy->setCategory($item['category'] ?? null);
-        $pharmacy->setGoogleMapsUrl($item['lien_google_maps'] ?? null);
+        $pharmacy->setGoogleMapsUrl($item['googleMapsUrl'] ?? null);
 
         // 👉 Extract lat/lng
         [$lat, $lng] = $this->extractCoordinates($item['googleMapsUrl'] ?? null);
