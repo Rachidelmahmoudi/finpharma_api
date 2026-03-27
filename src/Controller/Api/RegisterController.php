@@ -9,6 +9,7 @@ use Doctrine\ORM\EntityManagerInterface;
 use Exception;
 use JsonException;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Bundle\SecurityBundle\Security;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
@@ -27,6 +28,7 @@ final class RegisterController extends AbstractController
         private Environment $twig,
         private readonly MessageBusInterface $bus,
         private TranslatorInterface $translator,
+        private readonly Security $security
     ) {
         
     }
@@ -46,7 +48,6 @@ final class RegisterController extends AbstractController
         $password = $this->passwordHasher->hashPassword($user, $data['password']);
         $user->setPassword($password);
         $this->em->persist($user);
-        $this->em->flush();
         /**
          * Send confirmationn email
          */
@@ -56,6 +57,7 @@ final class RegisterController extends AbstractController
             $this->translator->trans('registration.subject' , domain: 'emails'), 
             $this->twig->render('emails/welcome.html.twig')
         ));
+        $this->em->flush();
         return new JsonResponse(['success' => true]);
     }
 }
