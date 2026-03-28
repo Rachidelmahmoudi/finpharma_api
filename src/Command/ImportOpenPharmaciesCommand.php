@@ -34,7 +34,6 @@ class ImportOpenPharmaciesCommand extends Command
             $city = $townData['name'] ?? null;
             foreach (($townData['neighborhoods'] ?? []) as $neighborhoodData) {
                 $dutyType = $neighborhoodData['dutyType'] ?? null;
-
                 foreach ($neighborhoodData['neighborhoods'] as $quartierData) {
                     $quartier = !empty($quartierData['quartier']) ? str_replace('Quartier: ', '', $quartierData['quartier']) : 'Other';
                     foreach ($quartierData['pharmacies'] as $pharmacyData) {
@@ -76,31 +75,36 @@ class ImportOpenPharmaciesCommand extends Command
                         if ($gardeStatus === "Ouvert en ce moment") {
                             $openPharmacy->setAmFrom(new \DateTime('now'))->setAmTo(new \DateTime('now +3 hours'));
                         }
-                        if (str_contains($gardeStatus, '24h')) {
+                        else if (str_contains($gardeStatus, '24h')) {
                             $openPharmacy->setAmFrom(new \DateTime('today 00:00'))->setAmTo(new \DateTime('today 23:59'));
                             $pharmacy->setIsAlwaysOpen(true);
                         }
-                        preg_match('/(\d{1,2}h).*?(\d{1,2}h)/', $gardeStatus, $matches);
-                        if (count($matches) < 2) {
-                            continue; // skip if time format is not as expected
-                        }
-                        $start = $matches[1];
-                        $end = $matches[2];
-                        $start_hour = str_replace('h', ':00', $start);
-                        $end_hour = str_replace('h', ':00', $end);
-                        if (str_contains($gardeStatus, 'Garde Jour')) {
-                            if (new DateTime($end_hour) > new DateTime('today 12:00')) {
-                                $openPharmacy->setAmFrom(new \DateTime("today {$start_hour}"))->setAmTo(new \DateTime("today 12:00"));
-                                $openPharmacy->setPmFrom(new \DateTime("today 13:00"))->setPmTo(new \DateTime("today {$end_hour}"));    
-                            } else {
-                                $openPharmacy->setAmFrom(new \DateTime("today {$start_hour}"))->setAmTo(new \DateTime("today {$end_hour}"));
+                        else {
+                            preg_match('/(\d{1,2}h).*?(\d{1,2}h)/', $gardeStatus, $matches);
+                            if (count($matches) < 2) {
+                                continue; // skip if time format is not as expected
                             }
-                        } else if (str_contains($gardeStatus, 'Garde Nuit')) {
-                            if (new DateTime($start_hour) > new DateTime($end_hour)) {
-                                $openPharmacy->setPmFrom(new \DateTime("today {$start_hour}"))->setPmTo(new \DateTime("today 23:59"));
-                                $openPharmacy->setAmFrom(new \DateTime("today 0:00"))->setAmTo(new \DateTime("today {$end_hour}"));
-                            } else {
-                                $openPharmacy->setPmFrom(new \DateTime("today {$start_hour}"))->setPmTo(new \DateTime("today {$end_hour}")); 
+                            $start = $matches[1];
+                            $end = $matches[2];
+                            $start_hour = str_replace('h', ':00', $start);
+                            $end_hour = str_replace('h', ':00', $end);
+                            if (str_contains($gardeStatus, 'Garde Jour')) {
+                                if (new DateTime($end_hour) > new DateTime('today 12:00')) {
+                                    $openPharmacy->setAmFrom(new \DateTime("today {$start_hour}"))->setAmTo(new \DateTime("today 12:00"));
+                                    $openPharmacy->setPmFrom(new \DateTime("today 13:00"))->setPmTo(new \DateTime("today {$end_hour}"));    
+                                } else {
+                                    $openPharmacy->setAmFrom(new \DateTime("today {$start_hour}"))->setAmTo(new \DateTime("today {$end_hour}"));
+                                }
+                            } else if ($dutyType === 'garde-nuit') {
+                                dd(8);
+                                if (new DateTime($start_hour) > new DateTime($end_hour)) {
+                                    dd(1);
+                                    $openPharmacy->setPmFrom(new \DateTime("today {$start_hour}"))->setPmTo(new \DateTime("today 23:59"));
+                                    $openPharmacy->setAmFrom(new \DateTime("today 0:00"))->setAmTo(new \DateTime("today {$end_hour}"));
+                                } else {
+                                    dd(2);
+                                    $openPharmacy->setPmFrom(new \DateTime("today {$start_hour}"))->setPmTo(new \DateTime("today {$end_hour}")); 
+                                }
                             }
                         }
                         $this->em->persist($openPharmacy);
