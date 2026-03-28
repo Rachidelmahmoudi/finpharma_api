@@ -50,6 +50,7 @@ class PharmacyImporter
                 }
             }
             if ($hasTooLongField) {
+                dd($item);
                 $this->appendFailedImport($failedFile, $item);
                 continue; // Skip this record safely
             }

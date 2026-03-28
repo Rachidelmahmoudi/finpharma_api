@@ -112,10 +112,9 @@ class PharmacyRepository extends ServiceEntityRepository implements Searchable
     public function findPharmacyByCity(string $name, string $city): array
     {
         return $this->createQueryBuilder('p')
-            ->andWhere('LOWER(p.name) = :name')
-            ->andWhere('LOWER(p.city) = :city')
-            ->setParameter('name', strtolower($name))
-            ->setParameter('city', strtolower($city))
+            ->andWhere('LOWER(p.name) like :name AND LOWER(p.address) like :city')
+            ->setParameter('name', '%'. trim(strtolower($name)).'%')
+            ->setParameter('city', '%'.trim(strtolower($city)).'%')
             ->getQuery()
             ->getResult();
     }
