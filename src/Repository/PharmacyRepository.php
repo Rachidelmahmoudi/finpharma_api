@@ -44,16 +44,8 @@ class PharmacyRepository extends ServiceEntityRepository implements Searchable
     {
         $qb =  $this->createQueryBuilder('p')
         ->leftJoin('p.openingHours', 'oh')
-        ->andWhere('oh.source = :source AND oh.day = :today AND ((oh.amFrom <= :now AND oh.amTo >= :now) OR (oh.pmFrom <= :now AND oh.pmTo >= :now))')
-        ->orWhere('p.isAlwaysOpen = true')
-        ->orWhere('(HOUR(CURRENT_TIME()) BETWEEN :startMorning AND :endMorning) OR (HOUR(CURRENT_TIME()) BETWEEN :startAfternoon AND :endAfternoon)')
-        ->setParameter('today', date('Y-m-d'))
-        ->setParameter('source', 'scraper')
-        ->setParameter('startMorning', 9)
-        ->setParameter('endMorning', 12)
-        ->setParameter('startAfternoon', 15)
-        ->setParameter('endAfternoon', 21)
-        ->setParameter('now', new \DateTime());
+        ->andWhere('oh.source = :source OR p.isAlwaysOpen = true')
+        ->setParameter('source', 'scraper');
 
         if (!empty($filter['city'])) {
             $qb->andWhere('LOWER(p.city) = :city')
@@ -61,7 +53,7 @@ class PharmacyRepository extends ServiceEntityRepository implements Searchable
         }
 
         if (!empty($filter['town'])) {
-            $qb->andWhere('LOWER(p.address) like :town OR LOWER(oh.town) = :town')
+            $qb->andWhere('LOWER(p.address) like :town OR LOWER(oh.town) = :town OR LOWER(p.town) = :town')
                ->setParameter('town', strtolower($filter['town']));
         }
 
