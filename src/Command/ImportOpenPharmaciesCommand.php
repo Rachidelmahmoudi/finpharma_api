@@ -36,6 +36,7 @@ class ImportOpenPharmaciesCommand extends Command
             foreach ($pharmaciesData as $pharmacyData) {
                 $pharmacyName = $pharmacyData['name'] ?? null;
                 $status = $pharmacyData['status'] ?? null;
+                $openingHours = $pharmacyData['openingHours'] ?? null;
                 $pharmacy = $this->em->getRepository(Pharmacy::class)->findOneBy([
                     'name' => $pharmacyName,
                     'city' => ucfirst(strtolower($city))
@@ -59,6 +60,18 @@ class ImportOpenPharmaciesCommand extends Command
                 } else if ($status === 'Ouvert 24h') {
                     $pharmacy->setIsAlwaysOpen(true);
                     $this->em->persist($pharmacy);
+                } else if ($openingHours === 'Ouvert entre 9h et 23h') {
+                    $openPharmacy->setSource('scraper')
+                    ->setAmFrom(new DateTime('09:00:00'))
+                    ->setAmTo(new DateTime('23:00:00'))
+                    ->setDay(new DateTime());
+                } else if ($openingHours === 'Ouvert de 20h à 9h') {
+                    $openPharmacy->setSource('scraper')
+                    ->setPmFrom(new DateTime('20:00:00'))
+                    ->setPmTo(new DateTime('09:00:00'))
+                    ->setAmFrom(new DateTime('01:00:00'))
+                    ->setAmTo(new DateTime('09:00:00'))
+                    ->setDay(new DateTime());
                 }
                 $this->em->persist($openPharmacy);
             }
