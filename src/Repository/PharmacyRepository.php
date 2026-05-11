@@ -42,9 +42,51 @@ class PharmacyRepository extends ServiceEntityRepository implements Searchable
 
     public function findPharmacies(int $page = 1, int $itemsPerPage = 5, array $filter): DoctrinePaginator
     {
-        $qb =  $this->createQueryBuilder('p')
-        ->leftJoin('p.openingHours', 'oh')
-        ->andWhere('p.isAlwaysOpen = true OR oh.source = :source OR ((CURRENT_TIME() BETWEEN oh.amFrom AND oh.amTo OR CURRENT_TIME() BETWEEN oh.pmFrom AND oh.pmTo) AND oh.day = CURRENT_DATE())')
+        // $qb =  $this->createQueryBuilder('p')
+        // ->leftJoin('p.openingHours', 'oh')
+        // ->andWhere('p.isAlwaysOpen = true OR oh.source = :source OR (()')
+
+        // $qb->andWhere(
+        //     $qb->expr()->orX(
+        //         'p.isAlwaysOpen = true',
+        //         'oh.source = :source',
+        //         $qb->expr()->andX(
+        //             'oh.day = CURRENT_DATE()',
+        //             $qb->expr()->orX(
+        //                 'CURRENT_TIME() BETWEEN oh.amFrom AND oh.amTo',
+        //                 'CURRENT_TIME() BETWEEN oh.pmFrom AND oh.pmTo'
+        //             )
+        //         )
+        //     )
+        // );
+        $qb = $this->createQueryBuilder('p')
+        ->leftJoin('p.openingHours', 'oh');
+        $qb->andWhere(
+            $qb->expr()->orX(
+                'p.isAlwaysOpen = true',
+                'oh.source = :source',
+
+                $qb->expr()->andX(
+                    'oh.day = CURRENT_DATE()',
+                    $qb->expr()->orX(
+                        'CURRENT_TIME() BETWEEN oh.amFrom AND oh.amTo',
+                        'CURRENT_TIME() BETWEEN oh.pmFrom AND oh.pmTo'
+                    )
+                ),
+
+                $qb->expr()->andX(
+                    'WEEKDAY(CURRENT_DATE()) < 5',
+                    $qb->expr()->orX(
+                        'CURRENT_TIME() BETWEEN :morningStart AND :morningEnd',
+                        'CURRENT_TIME() BETWEEN :afternoonStart AND :afternoonEnd'
+                    )
+                )
+            )
+        )
+        ->setParameter('morningStart', '10:00:00')
+        ->setParameter('morningEnd', '12:00:00')
+        ->setParameter('afternoonStart', '15:00:00')
+        ->setParameter('afternoonEnd', '20:00:00')
         ->setParameter('source', 'scraper');
 
         if (!empty($filter['city'])) {

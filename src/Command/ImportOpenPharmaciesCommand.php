@@ -68,9 +68,7 @@ class ImportOpenPharmaciesCommand extends Command
                 } else if ($openingHours === 'Ouvert de 20h à 9h') {
                     $openPharmacy->setSource('scraper')
                     ->setPmFrom(new DateTime('20:00:00'))
-                    ->setPmTo(new DateTime('09:00:00'))
-                    ->setAmFrom(new DateTime('01:00:00'))
-                    ->setAmTo(new DateTime('09:00:00'))
+                    ->setPmTo(new DateTime('23:59:00'))
                     ->setDay(new DateTime());
                 }
                 $this->em->persist($openPharmacy);

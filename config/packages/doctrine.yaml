@@ -60,6 +60,7 @@ doctrine:
                 # ST_DistanceSphere: CrEOF\Spatial\ORM\Query\AST\Functions\AbstractSpatialDQLFunction\STDistanceSphere
             datetime_functions:
                 HOUR: DoctrineExtensions\Query\Mysql\Hour
+                WEEKDAY: DoctrineExtensions\Query\Mysql\WeekDay
 
 when@test:
     doctrine:
