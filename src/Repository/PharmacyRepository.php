@@ -44,7 +44,7 @@ class PharmacyRepository extends ServiceEntityRepository implements Searchable
     {
         $qb =  $this->createQueryBuilder('p')
         ->leftJoin('p.openingHours', 'oh')
-        ->andWhere('oh.source = :source OR p.isAlwaysOpen = true')
+        ->andWhere('p.isAlwaysOpen = true OR oh.source = :source OR ((CURRENT_TIME() BETWEEN oh.amFrom AND oh.amTo OR CURRENT_TIME() BETWEEN oh.pmFrom AND oh.pmTo) AND oh.day = CURRENT_DATE())')
         ->setParameter('source', 'scraper');
 
         if (!empty($filter['city'])) {

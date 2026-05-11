@@ -38,7 +38,7 @@ class ImportOpenPharmaciesCommand extends Command
                 $status = $pharmacyData['status'] ?? null;
                 $pharmacy = $this->em->getRepository(Pharmacy::class)->findOneBy([
                     'name' => $pharmacyName,
-                    'city' => $city
+                    'city' => ucfirst(strtolower($city))
                 ]);
                 if (!$pharmacy) {
                     $pharmacy = new Pharmacy();
@@ -46,19 +46,21 @@ class ImportOpenPharmaciesCommand extends Command
                         ->setAddress($pharmacyData['district'] ?? 'Mon adresse inconnue')
                         ->setPhone('0600000000')
                         ->setTown($pharmacyData['district'])
-                        ->setCity($city);
+                        ->setCity(ucfirst(strtolower($city)));
                     $this->em->persist($pharmacy);
                 }
+                $openPharmacy = new OpenPharmacy();
+                $openPharmacy->setPharmacy($pharmacy)
+                    ->setTown($pharmacyData['district'])
+                    ->setGardeStatus($status)
+                    ->setCreatedAt(new \DateTimeImmutable());
                 if ($status === 'Ouvert en ce moment') {
-                    $openPharmacy = new OpenPharmacy();
-                    $openPharmacy->setPharmacy($pharmacy)
-                        ->setTown($pharmacyData['district'])
-                        ->setGardeStatus($status)
-                        ->setCreatedAt(new \DateTimeImmutable())
-                        ->setSource('scraper');
-                    
-                    $this->em->persist($openPharmacy);
+                    $openPharmacy->setSource('scraper');
+                } else if ($status === 'Ouvert 24h') {
+                    $pharmacy->setIsAlwaysOpen(true);
+                    $this->em->persist($pharmacy);
                 }
+                $this->em->persist($openPharmacy);
             }
         }
 
