@@ -69,6 +69,7 @@ login:
     login_with_facebook: Se connecer avec Facebook
     login_with_google: Se connecer avec Google
     login_with_linkedin : Se connecer avec Linkedin
+    submit: Se connecter
 
 delete:
     title: Supprimer votre compte

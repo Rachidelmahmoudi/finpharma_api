@@ -69,6 +69,7 @@ login:
     login_with_facebook: Login with Facebook
     login_with_google: Login with Google
     login_with_linkedin : Login with Linkedin
+    submit: Login
 
 delete:
     title: Delete your account
