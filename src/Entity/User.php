@@ -88,6 +88,9 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     #[ORM\Column(length: 100, nullable: true)]
     private ?string $username = null;
 
+    #[ORM\Column(nullable: true)]
+    private ?int $status = null;
+
     public function __construct()
     {
         $this->establishments = new ArrayCollection();
@@ -214,6 +217,18 @@ class User implements UserInterface, PasswordAuthenticatedUserInterface
     public function setUsername(?string $username): static
     {
         $this->username = $username;
+
+        return $this;
+    }
+
+    public function getStatus(): ?int
+    {
+        return $this->status;
+    }
+
+    public function setStatus(?int $status): static
+    {
+        $this->status = $status;
 
         return $this;
     }

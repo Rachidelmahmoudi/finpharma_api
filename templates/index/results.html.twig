@@ -36,9 +36,9 @@
 				{# <li>
 					<h6>Layout</h6>
 					<div class="layout_view">
-						<a href="grid-list.html"><i class="icon-th"></i></a>
+						<a href="#"><i class="icon-th"></i></a>
 						<a href="#0" class="active"><i class="icon-th-list"></i></a>
-						<a href="list-map.html"><i class="icon-map-1"></i></a>
+						<a href="#"><i class="icon-map-1"></i></a>
 					</div>
 				</li> #}
 				{# <li>
@@ -60,7 +60,7 @@
 		<div class="row">
 			<div class="col-lg-7">
 				{% for item in results %}
-					{% include 'parts/_' ~ (item | type) ~ '_card.html.twig' %}
+					{% include 'parts/_' ~ (item[0] | type) ~ '_card.html.twig' %}
 				{% else %}
 					<div class="empty-result text-center">{{ 'index.results.empty' | trans }}</div>
 				{% endfor %}
@@ -86,6 +86,56 @@
 		document.querySelector('input[value='+elm?.value+']').checked = true;
 		document.forms?.main_search.submit();
 	}
+
+	function getInfoBox(data) {
+		console.log(data);
+        return new InfoBox({
+            content:
+            '<div class="marker_info">' +
+                '<figure>' +
+                '<a href="#">' +
+                    '<img src="' + data.map_image_url + '" alt="Image" width="40">' +
+                '</a>' +
+                '</figure>' +
+                '<h5><a href="#">' + data.name_point + '</a></h5>' +
+                '<span>' + data.description_point + data.city + '</span>' +
+                '<div class="marker_tools">' +
+
+                '<a href="tel:' + data.phone + '" class="btn_infobox_phone">' +
+                    data.phone +
+                '</a>' +
+
+                '</div>' +
+            '</div>',
+
+            disableAutoPan: false,
+            maxWidth: 0,
+            pixelOffset: new google.maps.Size(10, 105),
+            closeBoxMargin: "",
+            closeBoxURL: "img/close_infobox.png",
+            isHidden: false,
+            alignBottom: true,
+            pane: "floatPane",
+            enableEventPropagation: true
+        });
+    }
+
+	let markersData = {
+		Pharmacies: [
+			{% for item in results %}
+			{
+				name_point: "{{ item[0].name }}",
+				description_point: "{{ item[0].address }}",
+				city: "{{ item[0].city }}",
+				type: "Pharmacy",
+				location_latitude: {{ item[0].latitude }},
+				location_longitude: {{ item[0].longitude }},
+				map_image_url: "{{ asset('img/pharmacy.png') }}",
+				phone: "{{ item[0].phone }}"
+			},
+			{% endfor %}
+		]
+	};
 	</script>
 	<script
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCu7Nj2MVP5JAgWJRzF4tWhIYXhECV49lU">

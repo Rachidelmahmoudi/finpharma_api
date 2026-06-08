@@ -27,16 +27,63 @@ class PharmacyRepository extends ServiceEntityRepository implements Searchable
      * 
      * @return mixed
      */
-    public function search(string $query): mixed
+    public function search(string $query, ?float $latitude = null, ?float $longitude = null): mixed
     {
-        if (empty($query)) {
-            return $this->createQueryBuilder('p')
-            ->getQuery();
-        }
-        return $this->createQueryBuilder('p')
-            ->andWhere('p.name like :query')
-            ->setParameter('query', '%'.$query.'%')
-            ->getQuery();
+        // if (empty($query)) {
+        //     return $this->createQueryBuilder('p')
+        //     ->getQuery();
+        // }
+        // return $this->createQueryBuilder('p')
+        //     ->andWhere('p.name like :query')
+        //     ->setParameter('query', '%'.$query.'%')
+        //     ->getQuery();
+
+
+            $qb = $this->createQueryBuilder('p')
+            ->leftJoin('p.openingHours', 'oh');
+            $qb->andWhere(
+                $qb->expr()->orX(
+                    'p.isAlwaysOpen = true',
+                    'oh.source = :source',
+
+                    $qb->expr()->andX(
+                        'oh.day = CURRENT_DATE()',
+                        $qb->expr()->orX(
+                            'CURRENT_TIME() BETWEEN oh.amFrom AND oh.amTo',
+                            'CURRENT_TIME() BETWEEN oh.pmFrom AND oh.pmTo'
+                        )
+                    ),
+
+                    $qb->expr()->andX(
+                        'WEEKDAY(CURRENT_DATE()) < 5',
+                        $qb->expr()->orX(
+                            'CURRENT_TIME() BETWEEN :morningStart AND :morningEnd',
+                            'CURRENT_TIME() BETWEEN :afternoonStart AND :afternoonEnd'
+                        )
+                    )
+                )
+            )
+            ->setParameter('morningStart', '10:00:00')
+            ->setParameter('morningEnd', '12:00:00')
+            ->setParameter('afternoonStart', '15:00:00')
+            ->setParameter('afternoonEnd', '20:00:00')
+            ->setParameter('source', 'scraper');
+
+            if (!empty($query)) {
+                $qb->andWhere('LOWER(p.name) like :query')
+                   ->setParameter('query', '%'.strtolower($query).'%');
+            }
+
+            if (!empty($latitude) && !empty($longitude)) {
+                $qb->addSelect('(6371000 * acos(cos(radians(:lat)) * cos(radians(p.latitude)) * cos(radians(p.longitude) - radians(:lng)) + sin(radians(:lat)) * sin(radians(p.latitude)))) AS distance')
+                    ->andWhere('(6371000 * acos(cos(radians(:lat)) * cos(radians(p.latitude)) * cos(radians(p.longitude) - radians(:lng)) + sin(radians(:lat)) * sin(radians(p.latitude)))) <= :radius')
+                    ->setParameter('lat', $latitude)
+                    ->setParameter('lng', $longitude)
+                    ->setParameter('radius', 10000)
+                    ->orderBy('distance', 'ASC');
+            }
+
+            return $qb->getQuery();
     }
 
 

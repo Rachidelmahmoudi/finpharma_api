@@ -92,6 +92,9 @@ class Medication
     #[ORM\Column(nullable: true)]
     private ?bool $canPregnancy = null;
 
+    #[ORM\Column(length: 40, nullable: true)]
+    private ?string $barcode = null;
+
     public function __construct()
     {
         $this->prescriptions = new ArrayCollection();
@@ -308,6 +311,18 @@ class Medication
     public function setCanPregnancy(?bool $canPregnancy): static
     {
         $this->canPregnancy = $canPregnancy;
+
+        return $this;
+    }
+
+    public function getBarcode(): ?string
+    {
+        return $this->barcode;
+    }
+
+    public function setBarcode(?string $barcode): static
+    {
+        $this->barcode = $barcode;
 
         return $this;
     }

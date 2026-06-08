@@ -30,7 +30,7 @@ final class IndexController extends AbstractController
             $query = $query ?? '';
         }
         if (!empty($type) || !empty($query)) {
-            $result = $main_searcher->search($type, $query);
+            $result = $main_searcher->search($type, $query, $query_main_search['latitude'] ?? '', $query_main_search['longitude'] ?? '');
             $pagination = $paginator->paginate(
                 $result,
                 $request->query->getInt('page', 1),

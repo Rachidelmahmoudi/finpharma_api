@@ -7,6 +7,7 @@ use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\HiddenType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -23,7 +24,9 @@ class MainSearchType extends AbstractType
                 'choices'  => SearchTypes::types(),
                 'expanded' => true,
                 'multiple' => false
-            ]);
+            ])
+            ->add('latitude', HiddenType::class)
+            ->add('longitude', HiddenType::class)
         ;
     }
 

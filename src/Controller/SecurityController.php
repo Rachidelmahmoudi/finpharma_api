@@ -2,7 +2,12 @@
 
 namespace App\Controller;
 
+use App\Form\DeleteAccountType;
+use App\Repository\UserRepository;
+use Doctrine\ORM\EntityManagerInterface;
+use Dom\Entity;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Security\Http\Authentication\AuthenticationUtils;
@@ -34,5 +39,28 @@ class SecurityController extends AbstractController
     public function profile(): void
     {
 
+    }
+
+    #[Route(path: '/account/delete', name: 'delete_account')]
+    public function deleteAccount(Request $request, UserRepository $userRepository, EntityManagerInterface $em): Response
+    {
+        $deleteAccountForm = $this->createForm(DeleteAccountType::class);
+        $deleteAccountForm->handleRequest($request);
+        if ($deleteAccountForm->isSubmitted() && $deleteAccountForm->isValid()) {
+            $user = $userRepository->findOneBy(['email' => $deleteAccountForm->get('email')->getData(), 'status' => 1]);
+            if ($user) {
+                $user->setStatus(-1);
+                $em->persist($user);
+                $em->flush();
+                $this->addFlash('success', 'Your account has been deleted.');
+                return $this->redirectToRoute('index');
+            } else {
+                $this->addFlash('error', 'No account found with the provided email.');
+                return $this->redirectToRoute('delete_account');
+            }  
+        }
+        return $this->render('security/delete_account.html.twig', [
+            'deleteAccountForm' => $deleteAccountForm,
+        ]);
     }
 }

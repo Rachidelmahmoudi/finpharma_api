@@ -2,6 +2,8 @@
 
 namespace App\EventSubscriber;
 
+use PhpParser\Node\Param;
+use Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpKernel\Event\RequestEvent;
@@ -9,11 +11,15 @@ use Symfony\Component\HttpKernel\KernelEvents;
 
 class MaintenanceSubscriber implements EventSubscriberInterface
 {
-    private bool $maintenance = true; // ⚠️ activer/désactiver ici
+    
+    public function __construct(private readonly ParameterBagInterface $parameterBag)
+    {
+        
+    }
 
     public function onKernelRequest(RequestEvent $event): void
     {
-        if (!$this->maintenance) {
+        if (!$this->parameterBag->get('app.maintenance')) {
             return;
         }
 

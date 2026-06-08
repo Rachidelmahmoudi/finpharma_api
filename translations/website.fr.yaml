@@ -9,7 +9,7 @@ menu:
     userful_links: userful links
     doctors: Médecins
     clinics: clinics
-    download_app: Download app
+    download_app: Telecharger l'application
     contact_with_us: Contact with us
     terms_and_conditions: Terms and condiitions
     privacy: privacy
@@ -28,7 +28,7 @@ index:
         see_more: En savoir plus
         pharmacy:
             title: Je suis pharmacien
-            text: Rejoignez plus de 17 000 pharmacies et gérez facilement vos horaires de garde et assurez une meilleure visibilité.
+            text: Rejoignez plus de 6000 pharmacies et gérez facilement vos horaires de garde et assurez une meilleure visibilité.
         medecine:
             title: Ajoutez votre cabinet
             text: Inscrivez votre cabinet médical, gérez vos informations et améliorez votre visibilité digitale.
@@ -69,6 +69,12 @@ login:
     login_with_facebook: Se connecer avec Facebook
     login_with_google: Se connecer avec Google
     login_with_linkedin : Se connecer avec Linkedin
+
+delete:
+    title: Supprimer votre compte
+    description: Êtes-vous sûr de vouloir supprimer votre compte ? Cette action est irréversible.
+    submit: Supprimer mon compte
+
 reset_password:
     create: Create your password
     reset: Reset your password

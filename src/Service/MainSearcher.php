@@ -16,12 +16,12 @@ class MainSearcher {
         
     }
 
-    public function search(string $type, string $query): null | Query {
+    public function search(string $type, string $query, ?float $latitude = null, ?float $longitude = null): null | Query {
         $subject = $this->getSubject($type);
         if ($subject  === 0) {
             $subject = Doctor::class;
         }
-        return $this->entity_manager->getRepository($subject)->search($query);
+        return $this->entity_manager->getRepository($subject)->search($query, $latitude, $longitude);
     }
 
     private function getSubject(string $type) : mixed {

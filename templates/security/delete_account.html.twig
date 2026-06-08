@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+{% trans_default_domain 'website' %}
+{% block body %}
+
+<div class="bg_color_2">
+    <div class="container margin_60_35">
+        <div class="text-center">
+            {% for label, messages in app.flashes(['success', 'error']) %}
+                {% for message in messages %}
+                    <div class="flash-{{ label }}">
+                        {{ message }}
+                    </div>
+                {% endfor %}
+            {% endfor %}
+        </div>
+        <div id="login-2">
+            <h1>{{ 'delete.title' | trans }}</h1>
+            <p>{{ 'delete.description' | trans }}</p>
+            {{ form_start(deleteAccountForm) }}
+            {{ form_row(deleteAccountForm.email) }}
+            <button type="submit" class="btn_1 full-width">{{ 'delete.submit' | trans }}</button>
+            {{ form_end(deleteAccountForm) }}
+        </div>
+        <!-- /login -->
+    </div>
+</div>
+{% endblock %}

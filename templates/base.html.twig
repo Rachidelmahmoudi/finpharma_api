@@ -80,9 +80,9 @@
                                 <a href="#0" class="show-submenu">{{ 'menu.services' | trans }}<i class="icon-down-open-mini"></i></a>
                                 <ul>
                                     <li><a href="{{ path('get_pharmacies') }}">{{ 'menu.pharmacies' | trans }}</a></li>
-                                    <li><a href="index-8.html">{{ 'menu.laboratories' | trans }}</a></li>
-                                    <li><a href="index-2.html">{{ 'menu.doctors' | trans }}</a></li>
-                                    <li><a href="index-2.html">{{ 'menu.medications' | trans }}</a></li>
+                                    <li><a href="#">{{ 'menu.laboratories' | trans }}</a></li>
+                                    <li><a href="#">{{ 'menu.doctors' | trans }}</a></li>
+                                    <li><a href="#">{{ 'menu.medications' | trans }}</a></li>
                                 </ul>
                             </li>
                             <li><a href="{{ path('index') }}"> {{ 'menu.contact' | trans }}</a></li>
@@ -104,7 +104,7 @@
             <div class="row">
                 <div class="col-lg-3 col-md-12">
                     <p>
-                        <a href="index.html" title="Findoctor">
+                        <a href="#" title="Findoctor">
                             <img src="{{ asset('img/logo.png') }}" data-retina="true" alt="" width="163" height="36"
                                 class="img-fluid">
                         </a>
@@ -114,10 +114,10 @@
                     <h5>About</h5>
                     <ul class="links">
                         <li><a href="#0">About us</a></li>
-                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="#">Blog</a></li>
                         <li><a href="#0">FAQ</a></li>
-                        <li><a href="login.html">Login</a></li>
-                        <li><a href="register.html">Register</a></li>
+                        <li><a href="#">Login</a></li>
+                        <li><a href="#">Register</a></li>
                     </ul>
                 </div> #}
                 <div class="col-lg-3 col-md-4">
@@ -131,8 +131,8 @@
                 <div class="col-lg-3 col-md-4">
                     <h5>{{ 'menu.contact_with_us' | trans }}</h5>
                     <ul class="contacts">
-                        <li><a href="tel://61280932400"><i class="icon_mobile"></i> + 61 23 8093 3400</a></li>
-                        <li><a href="mailto:info@findoctor.com"><i class="icon_mail_alt"></i> help@findoctor.com</a>
+                        <li><a href="tel://212631385109"><i class="icon_mobile"></i> +212631385109</a></li>
+                        <li><a href="mailto:contact@finpharma.ma"><i class="icon_mail_alt"></i> contact@finpharma.ma</a>
                         </li>
                     </ul>
                     <div class="follow_us">
@@ -150,8 +150,8 @@
             <div class="row">
                 <div class="col-md-8">
                     <ul id="additional_links">
-                        <li><a href="#0">{{ 'menu.terms_and_conditions' | trans }}</a></li>
-                        <li><a href="#0">{{ 'menu.privacy' | trans }}</a></li>
+                        <li><a href="{{ path('app_privacy_mobile') }}">{{ 'menu.terms_and_conditions' | trans }}</a></li>
+                        <li><a href="{{ path('app_privacy_mobile') }}">{{ 'menu.privacy' | trans }}</a></li>
                     </ul>
                 </div>
                 <div class="col-md-4">

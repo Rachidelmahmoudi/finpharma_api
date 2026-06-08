@@ -28,7 +28,7 @@ index:
         see_more: En savoir plus
         pharmacy:
             title: Je suis pharmacien
-            text: Rejoignez plus de 17 000 pharmacies et gérez facilement vos horaires de garde et assurez une meilleure visibilité.
+            text: Rejoignez plus de 6000 pharmacies et gérez facilement vos horaires de garde et assurez une meilleure visibilité.
         medecine:
             title: Ajoutez votre cabinet
             text: Inscrivez votre cabinet médical, gérez vos informations et améliorez votre visibilité digitale.
@@ -69,6 +69,11 @@ login:
     login_with_facebook: Login with Facebook
     login_with_google: Login with Google
     login_with_linkedin : Login with Linkedin
+
+delete:
+    title: Delete your account
+    description: Are you sure you want to delete your account? This action cannot be undone.
+    submit: Delete my accounts
 
 reset_password:
     create: Create your password
