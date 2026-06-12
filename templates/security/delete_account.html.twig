@@ -20,8 +20,18 @@
             {{ form_row(deleteAccountForm.email) }}
             <button type="submit" class="btn_1 full-width">{{ 'delete.submit' | trans }}</button>
             {{ form_end(deleteAccountForm) }}
+            <p class="my-3">* Votre demande de suppression sera traitée dans un délai de 30 jours.</p>
+            <b>Données supprimées :</b>
+            <ul>
+            <li> - Votre compte (email, mot de passe)</li>
+            <li> - Informations de votre pharmacie (nom, téléphone, adresse, ville, quartier, horaires)</li>
+            </ul>
+            <b>Données conservées :</b>
+            <p> - Certaines données peuvent être conservées jusqu'à 90 jours 
+            pour des raisons de sécurité et obligations légales.</p>
         </div>
         <!-- /login -->
+        
     </div>
 </div>
 {% endblock %}
